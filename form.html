@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>HTML Academy: Пинк</title>
+  </head>
+  <body>
+    <header class="page-header">
+      <a class="page-header__logo" href="index.html">
+        <img class="page-header__logo-image" src="img/logo-mobile.png" width="75" height="25" alt="Pink">
+      </a>
+      <!--По макету фон меню имеет непрозрачность 30%, и под ним виднеется фон section class="preview"; как сделать наползание меню на следующий блок, не используя absolute? -->
+      <nav class="main-nav">
+        <button class="main-nav__toggle" type="button">Открыть меню</button>
+        <div class="main-nav__wrapper">
+          <ul class="main-nav__list site-list">
+            <li class="main-nav__item site-list__item">
+              <a href="index.html">Главная</a>
+            </li>
+            <li class="main-nav__item site-list__item">
+              <a href="photo.html">Фотографии</a>
+            </li>
+            <li class="main-nav__item site-list__item">
+              <a href="#">Конкурс</a>
+            </li>
+            <li class="main-nav__item site-list__item">
+              <a href="#">HtmlAcademy</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <main class="page-main">
+      <h1 class="visually-hidden">Приложение Pink форма истории</h1>
+      <section class="form-preview">
+        <h2 class="visually-hidden">Превью текст</h2>
+        <p class="form-preview__text">Конкурс на самое безбашенное путешествие с Пинк</p>
+      </section>
+      <section class="form">
+        <h2 class="visually-hidden">Форма</h2>
+        <p class="form__info">Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту!</p>
+        <form class="form__data">
+          <fieldset class="form__full-name">
+            <label class="form_label-names" >
+              Фамилия:
+              <input class="form__names" type="text" id="surName" placeholder="Укажите фамилию*">
+            </label>
+            <label class="form_label-names" >
+              Имя:
+              <input class="form__names" type="text" id="firstName" placeholder="Введите ваше имя*">
+            </label>
+            <label class="form_label-names" >
+              Отчество:
+              <input class="form__names" type="text" id="middleName" placeholder="Ну и отчество тоже*">
+            </label>
+          </fieldset>
+          <fieldset class="form__filter">
+            <legend class="form__legend-filters">Ваши безбашенные достижения в путешествии</legend>
+            <input class="form__checkbox" type="checkbox" value="1" id="shark" name="add[]" checked>
+            <label class="form__checkbox-label" for="shark">Сделал селфи с акулой</label>
+            <input class="form__checkbox" type="checkbox" value="1" id="beach" name="add[]" checked>
+            <label class="form__checkbox-label" for="beach">Обгорел на пляже</label>
+            <input class="form__checkbox" type="checkbox" value="1" id="chack" name="add[]">
+            <label class="form__checkbox-label" for="chack">Видел Чака Норриса</label>
+            <input class="form__checkbox" type="checkbox" value="1" id="souvenir" name="add[]">
+            <label class="form__checkbox-label" for="souvenir">Накупил сувениров</label>
+            <input class="form__checkbox" type="checkbox" value="1" id="tower" name="add[]" checked>
+            <label class="form__checkbox-label" for="tower">Удержал башню</label>
+            <input class="form__checkbox" type="checkbox" value="1" id="hotel" name="add[]">
+            <label class="form__checkbox-label" for="hotel">Разгромил отель</label>
+          </fieldset>
+          <fieldset class="form__contacts">
+            <label class="form_label-phone" >
+              Номер телефона
+              <input class="form__phone" type="text" id="userPhone" placeholder="Номер, пожалуйста">
+            </label>
+            <label class="form_label-mail" >
+              Адрес почты
+              <input class="form__mail" type="text" id="userMail" placeholder="Введите почту *">
+            </label>
+          </fieldset>
+          <fieldset class="form__filter-radio">
+            <legend class="form__legend-filters">С каким приложением путешествовали?</legend>
+            <input class="form__radio" type="radio" id="ios" checked>
+            <label class="form__radio-label" for="ios">PINK для iOS</label>
+            <input class="form__radio" type="radio" value="1" id="android" name="add[]">
+            <label class="form__radio-label" for="android">PINK на Android</label>
+            <input class="form__radio" type="radio" value="1" id="windows" name="add[]">
+            <label class="form__radio-label" for="windows">Windows Phone</label>
+          </fieldset>
+          <fieldset class="form__emotions">
+            <textarea rows="8" cols="50" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
+          </fieldset>
+          <button class="form__submit" type="submit">Отправить форму</button>
+          <p class="form__note">* - обязательные поля</p>
+        </form>
+      </section>
+    </main>
+    <footer class="page-footer">
+      <div class="page-footer__logo">
+        <a href="#"><img src="footer_logo.png" alt="logo" width="150" height="45"></a>
+      </div>
+      <div class="page-footer__social social">
+        <ul class="social__list">
+          <li class="social__item">
+            <a class="social__link social__link--twitter" href="https://twitter.com/">Мы Вконтакте</a>
+          </li>
+          <li class="social__item">
+            <a class="social__link social__link--facebook" href="https://ru-ru.facebook.com/">Мы в Facebook</a>
+          </li>
+          <li class="social__item">
+            <a class="social__link social__link--youtube" href="https://www.youtube.com/">Мы в Youtube</a>
+          </li>
+        </ul>
+      </div>
+      <div class="page-footer__copyright">
+        <a class="page-footer__developed" href="https://htmlacademy.ru/">Разработано</a>
+        <a class="page-footer__logo" href="https://htmlacademy.ru/"></a>
+      </div>
+    </footer>
+  </body>
+</html>
