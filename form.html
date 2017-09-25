@@ -9,7 +9,6 @@
       <a class="page-header__logo" href="index.html">
         <img class="page-header__logo-image" src="img/logo-mobile.png" width="75" height="25" alt="Pink">
       </a>
-      <!--По макету фон меню имеет непрозрачность 30%, и под ним виднеется фон section class="preview"; как сделать наползание меню на следующий блок, не используя absolute? -->
       <nav class="main-nav">
         <button class="main-nav__toggle" type="button">Открыть меню</button>
         <div class="main-nav__wrapper">
@@ -39,7 +38,7 @@
       <section class="form">
         <h2 class="visually-hidden">Форма</h2>
         <p class="form__info">Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту!</p>
-        <form class="form__data">
+        <form class="form__data" action="https://echo.htmlacademy.ru" method="get">
           <fieldset class="form__full-name">
             <label class="form_label-names" >
               Фамилия:
@@ -82,9 +81,9 @@
           <fieldset class="form__filter-radio">
             <legend class="form__legend-filters">С каким приложением путешествовали?</legend>
             <input class="form__radio" type="radio" id="ios" checked>
-            <label class="form__radio-label" for="ios">PINK для iOS</label>
+            <label class="form__radio-label" for="ios"><span class="form__radio-pink">Pink</span> для iOS</label>
             <input class="form__radio" type="radio" value="1" id="android" name="add[]">
-            <label class="form__radio-label" for="android">PINK на Android</label>
+            <label class="form__radio-label" for="android"><span class="form__radio-pink">Pink</span> на Android</label>
             <input class="form__radio" type="radio" value="1" id="windows" name="add[]">
             <label class="form__radio-label" for="windows">Windows Phone</label>
           </fieldset>
