@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>HTML Academy: Пинк!</title>
+  </head>
+  <body>
+    <header class="page-header">
+      <a class="page-header__logo" href="index.html">
+        <img class="page-header__logo-image" src="img/logo-mobile.png" width="75" height="25" alt="Pink">
+      </a>
+      <!--По макету фон меню имеет непрозрачность 30%, и под ним виднеется фон section class="preview"; как сделать наползание меню на следующий блок, не используя absolute? -->
+      <nav class="main-nav">
+        <button class="main-nav__toggle" type="button">Открыть меню</button>
+        <div class="main-nav__wrapper">
+          <ul class="main-nav__list site-list">
+            <li class="main-nav__item site-list__item">
+              <a href="index.html">Главная</a>
+            </li>
+            <li class="main-nav__item site-list__item">
+              <a href="photo.html">Фотографии</a>
+            </li>
+            <li class="main-nav__item site-list__item">
+              <a href="#">Конкурс</a>
+            </li>
+            <li class="main-nav__item site-list__item">
+              <a href="#">HtmlAcademy</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <main class="page-main">
+      <h1 class="visually-hidden">Приложение Pink</h1>
+      <section class="photo-preview">
+        <h2 class="visually-hidden">Фотографии</h2>
+        <p class="photo-preview__title">
+          Фотографии пользователей
+        </p>
+      </section>
+      <section class="photo-preview__info">
+        <h2 class="visually-hidden">Фотографии пользователей</h2>
+        <p class="photo-preview__text">Взгляните на фотографии, которые выкладывают пользователи!</p>
+        <p class="photo-preview__text">Видите, как не хватает ваших?</p>
+      </section>
+      <section class="post">
+        <h2 class="visually-hidden">Посты</h2>
+        <div class="post__wrapper">
+          <ul class="post__list">
+            <li class="post__item">
+              <div>
+                <img class="post__image-panorama" src="img/levon.jpg" alt="Фото" width="320" height="135">
+              </div>
+              <div class="post__information">
+                <p class="post__nickname">Левон<span class="post-time">(5 часов назад)</span></p>
+                <p class="post__comment">Вчера он на луну летал, сегодня в руки к нам попал.</p>
+                <div class="post__rate">
+                  <img class="post__heart" src="img/heart.svg" alt="heart">
+                  <p class="post__heart-count">Нравится: 356</p>
+                </div>
+              </div>
+            </li>
+            <li class="post__item">
+              <div>
+                <img class="post__image" src="img/levon.jpg" alt="Фото" width="280" height="180">
+              </div>
+              <div class="post__information">
+                <p class="post__nickname">Левон<span class="post-time">(5 часов назад)</span></p>
+                <p class="post__comment">Вчера он на луну летал, сегодня в руки к нам попал.</p>
+                <div class="post__rate">
+                  <img class="post__heart" src="img/heart.svg" alt="heart">
+                  <p class="post__heart-count">Нравится: 356</p>
+                </div>
+              </div>
+            </li>
+            <li class="post__item">
+              <div>
+                <img class="post__image" src="img/anton.jpg" alt="Фото" width="280" height="180">
+              </div>
+              <div class="post__information">
+                <p class="post__nickname">Антон<span class="post-time">(12 часов назад)</span></p>
+                <p class="post__comment">Соседи будут рады!</p>
+                <div class="post__rate">
+                  <img class="post__heart" src="img/heart.svg" alt="heart">
+                  <p class="post__heart-count">Нравится: 666</p>
+                </div>
+              </div>
+            </li>
+            <li class="post__item">
+              <div>
+                <img class="post__image" src="img/boris.jpg" alt="Фото" width="280" height="180">
+              </div>
+              <div class="post__information">
+                <p class="post__nickname">Борис<span class="post-time">(20 часов назад)</span></p>
+                <p class="post__comment">Здесь могла быть ваша цитата о высоком и вечном.</p>
+                <div class="post__rate">
+                  <img class="post__heart" src="img/heart.svg" alt="heart">
+                  <p class="post__heart-count">Нравится: 215</p>
+                </div>
+              </div>
+            </li>
+            <li class="post__item">
+              <div>
+                <img class="post__image" src="img/sergei.jpg" alt="Фото" width="280" height="180">
+              </div>
+              <div class="post__information">
+                <p class="post__nickname">Сергей<span class="post-time">(25 часов назад)</span></p>
+                <p class="post__comment">Самая кубанская в мире!</p>
+                <div class="post__rate">
+                  <img class="post__heart" src="img/heart.svg" alt="heart">
+                  <p class="post__heart-count">Нравится: 4</p>
+                </div>
+              </div>
+            </li>
+            <li class="post__item">
+              <div>
+                <img class="post__image" src="img/maxim.jpg" alt="Фото" width="280" height="180">
+              </div>
+              <div class="post__information">
+                <p class="post__nickname">Максим<span class="post-time">(40 часов назад)</span></p>
+                <p class="post__comment">Где снег-то?</p>
+                <div class="post__rate">
+                  <img class="post__heart" src="img/heart.svg" alt="heart">
+                  <p class="post__heart-count">Нравится: 150</p>
+                </div>
+              </div>
+            </li>
+            <li class="post__item">
+              <div>
+                <img class="post__image" src="img/nadejda.jpg" alt="Фото" width="280" height="180">
+              </div>
+              <div class="post__information">
+                <p class="post__nickname">Надежда<span class="post-time">(45 часов назад)</span></p>
+                <p class="post__comment">Всем GM и взаимные лайки!</p>
+                <div class="post__rate">
+                  <img class="post__heart" src="img/heart.svg" alt="heart">
+                  <p class="post__heart-count">Нравится: 2560</p>
+                </div>
+              </div>
+            </li>
+          </ul>
+          <div class="post__end">
+            <p class="post__text">Затмите их всех!</p>
+            <p class="post__text">Выкладывайте все, что накопилось в телефоне!</p>
+          </div>
+        </div>
+      </section>
+      <section class="post-upload">
+        <h2 class="visually-hidden">Загрузка поста</h2>
+        <div>
+          <img class="post-upload__photo" src="img/winter.jpg" alt="Winter photo">
+        </div>
+        <form class="post-upload__styles" action="#" method="get">
+          <fieldset class="post-upload__functions">
+            <input type="radio" name="size" value="size">
+            <input type="radio" name="filling" value="filling">
+            <input type="radio" name="contrast" value="contrast">
+          </fieldset>
+          <div class="post-upload__range">
+            <input type="range" min="0" max="100" step="1" value="80">
+          </div>
+        </form>
+        <form class="post-upload__buttons">
+          <button class="post-upload__post" type="submit">Запостить</button>
+          <button class="post-upload__cancel" type="submit">Отмена</button>
+        </form>
+      </section>
+    </main>
+    <footer class="page-footer">
+      <div class="page-footer__logo">
+        <a href="#"><img src="footer_logo.png" alt="logo" width="150" height="45"></a>
+      </div>
+      <div class="page-footer__social social">
+        <ul class="social__list">
+          <li class="social__item">
+            <a class="social__link social__link--twitter" href="https://twitter.com/">Мы Вконтакте</a>
+          </li>
+          <li class="social__item">
+            <a class="social__link social__link--facebook" href="https://ru-ru.facebook.com/">Мы в Facebook</a>
+          </li>
+          <li class="social__item">
+            <a class="social__link social__link--youtube" href="https://www.youtube.com/">Мы в Youtube</a>
+          </li>
+        </ul>
+      </div>
+      <div class="page-footer__copyright">
+        <a class="page-footer__developed" href="https://htmlacademy.ru/">Разработано</a>
+        <a class="page-footer__logo" href="https://htmlacademy.ru/"></a>
+      </div>
+    </footer>
+  </body>
+</html>
