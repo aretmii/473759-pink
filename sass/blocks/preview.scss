@@ -1,0 +1,13 @@
+@import "sass/blocks/variables.scss";
+
+.preview{
+    background-image: url(../img/bg-back-mobile@1x.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    font-family: $font-stack;
+    min-height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+}

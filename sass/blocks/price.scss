@@ -1,0 +1,75 @@
+.price{
+    display: flex;
+    flex-direction: column;
+    align-content: stretch;
+    background-image: url("../img/shape-price.png");
+    background-size: cover;
+    padding-top: 90px;
+}
+
+.price__wrapper{
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+}
+
+.price__list{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.price__item{
+    display: flex;
+    flex-direction: column;
+    text-transform: uppercase;
+}
+
+.price__text{
+    color: #ffffff;
+    background-color: #283645;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 25px 0;
+}
+
+.price__title{
+    margin: 0;
+    padding-bottom: 10px;
+    font-size: 18px;
+    line-height: 30px;
+}
+
+.price__description{
+    color: #ffffff;
+    margin: 0;
+    font-size: 24px;
+    line-height: 30px;
+    font-weight: normal;
+}
+
+.price-filter{
+    list-style: none;
+    padding: 0;
+}
+
+.price-filter__item{
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid #e5e5e5;
+}
+
+.price-filter__text{
+    padding: 25px 0 25px 45px;
+    margin: 0;
+}
+
+.price-filter__img{
+    padding-right: 40px;
+}
+
+.price__toggles{
+    display: flex;
+    justify-content: center;
+}
