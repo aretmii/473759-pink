@@ -12,7 +12,7 @@
     padding: 0 20px;
 }
 
-.form-data_label-names{
+.form-data__label-names{
     font-size: 14px;
     line-height: 30px;
     color: #d22856;
@@ -29,7 +29,6 @@
     background-color: #f2f2f2;
     display: flex;
     flex-direction: column;
-
 }
 
 .form-data__legend-filters{
@@ -68,6 +67,6 @@
     padding: 24px 48px 24px 48px;
 }
 
-.star{
+.form-data__star{
     color: #d22856;
 }

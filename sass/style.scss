@@ -1,6 +1,6 @@
 @import "sass/blocks/preview.scss";
 @import "sass/blocks/page-header.scss";
-@import "sass/blocks/variables.scss";
+@import "sass/variables.scss";
 @import "sass/blocks/download.scss";
 @import "sass/blocks/preview-info.scss";
 @import "sass/blocks/features.scss";
@@ -13,14 +13,4 @@
 @import "sass/blocks/photo/post-upload.scss";
 @import "sass/blocks/form/form-preview.scss";
 @import "sass/blocks/form/form-data.scss";
-
-$font-stack: 'Open Sans', 'MyriadPro', sans-serif;
-
-body{
-    margin: 0;
-    font-family: $font-stack;
-}
-
-.visually-hidden{
-    display: none;
-}
+@import "sass/common.scss";
