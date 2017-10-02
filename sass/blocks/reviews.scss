@@ -1,29 +1,25 @@
-.reviews{
-
+.reviews__item {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding-top: 50px;
 }
 
-.reviews__item{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding-top: 50px;
+.reviews__author-name {
+      font-weight: bold;
+      font-style: normal;
+      line-height: 24px;
+      font-size: 18px;
 }
 
-.reviews__author-name{
-    font-weight: bold;
-    font-style: normal;
-    line-height: 24px;
-    font-size: 18px;
+.reviews__text {
+      margin-top: 20px;
+      text-align: center;
+      line-height: 38px;
 }
 
-.reviews__text{
-    margin-top: 20px;
-    text-align: center;
-    line-height: 38px;
-}
-
-.reviews__wrapper{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+.reviews__wrapper {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
 }

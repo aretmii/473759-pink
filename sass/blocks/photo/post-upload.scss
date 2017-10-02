@@ -1,45 +1,45 @@
-.post-upload__photo{
-    padding: 20px;
-    background-color: #f2f2f2;
+.post-upload__photo {
+      padding: 20px;
+      background-color: #f2f2f2;
 }
 
-.post-upload__styles{
-    background-color: #f2f2f2;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+.post-upload__styles {
+      background-color: #f2f2f2;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
 }
 
-.post-upload__functions{
-    border: none;
+.post-upload__functions {
+      border: none;
 }
 
-.post-upload__buttons{
-    background-color: #f2f2f2;
-    border-top: 1px #dddfe0 solid;
-    display: flex;
-    flex-direction: column;
-    padding: 40px 20px;
+.post-upload__buttons {
+      background-color: #f2f2f2;
+      border-top: 1px #dddfe0 solid;
+      display: flex;
+      flex-direction: column;
+      padding: 40px 20px;
 }
 
 .post-upload__post,
-.post-upload__cancel{
-    border-radius: 35px;
-    padding: 20px 90px;
-    margin-bottom: 10px;
-    background-color: #f2f2f2;
+.post-upload__cancel {
+      border-radius: 35px;
+      padding: 20px 90px;
+      margin-bottom: 10px;
+      background-color: #f2f2f2;
 }
 
-.post-upload__post{
-    border: solid 2px #d22856;
-    color: #d22856;
-    font-size: 18px;
-    line-height: 18px;
+.post-upload__post {
+      border: solid 2px #d22856;
+      color: #d22856;
+      font-size: 18px;
+      line-height: 18px;
 }
 
-.post-upload__cancel{
-    border: solid 2px #dddfe0;
-    color: #dddfe0;
-    font-size: 18px;
-    line-height: 18px;
+.post-upload__cancel {
+      border: solid 2px #dddfe0;
+      color: #dddfe0;
+      font-size: 18px;
+      line-height: 18px;
 }
