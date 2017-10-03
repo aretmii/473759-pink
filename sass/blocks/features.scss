@@ -1,20 +1,20 @@
 .features__list {
-      list-style: none;
-      margin: 0;
+  list-style: none;
+  margin: 0;
 }
 
 .features-shape {
-      padding: 120px 20px 0 20px;
-      background-image: url('../img/shape-info.png');
-      background-repeat: no-repeat;
-      background-position: top;
-      display: flex;
-      flex-direction: column;
-      justify-content: space-between;
-      align-items: center;
+  padding: 120px 20px 0 20px;
+  background-image: url("../img/shape-info.png");
+  background-repeat: no-repeat;
+  background-position: top;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .features-image {
-      width: 160px;
-      height: 325px;
-  }
+  width: 160px;
+  height: 325px;
+}

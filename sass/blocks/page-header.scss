@@ -1,18 +1,18 @@
 .page-header {
-      font-family: $font-stack;
-      background-color: rgba(29, 38, 50, 0.3);
-      color: #ffffff;
-      padding: 22px 0;
-      position: absolute;
-      top: 0;
-      left: 0;
-      right: 0;
-      display: flex;
-      flex-direction: column;
+  font-family: $font-stack;
+  background-color: rgba(29, 38, 50, 0.3);
+  color: #ffffff;
+  padding: 22px 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  flex-direction: column;
 }
 
 .page-header__wrapper {
-      display: flex;
-      justify-content: space-between;
-      padding: 0 20px;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 20px;
 }
