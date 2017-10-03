@@ -3,15 +3,17 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Пинк!</title>
+    <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
     <header class="page-header">
-      <a class="page-header__logo" href="index.html">
-        <img class="page-header__logo-image" src="img/logo-mobile.png" width="75" height="25" alt="Pink">
-      </a>
-      <!--По макету фон меню имеет непрозрачность 30%, и под ним виднеется фон section class="preview"; как сделать наползание меню на следующий блок, не используя absolute? -->
-      <nav class="main-nav">
+      <div class="page-header__wrapper">
+        <a class="page-header__logo" href="index.html">
+          <img class="page-header__logo-image" src="img/logo-mobile.png" width="75" height="25" alt="Pink">
+        </a>
         <button class="main-nav__toggle" type="button">Открыть меню</button>
+      </div>
+      <nav class="main-nav">
         <div class="main-nav__wrapper">
           <ul class="main-nav__list site-list">
             <li class="main-nav__item site-list__item">
@@ -32,24 +34,35 @@
     </header>
     <main class="page-main">
       <h1 class="visually-hidden">Приложение Pink</h1>
-      <section class="photo-preview">
-        <h2 class="visually-hidden">Фотографии</h2>
-        <p class="photo-preview__title">
-          Фотографии пользователей
-        </p>
-      </section>
-      <section class="photo-preview__info">
-        <h2 class="visually-hidden">Фотографии пользователей</h2>
-        <p class="photo-preview__text">Взгляните на фотографии, которые выкладывают пользователи!</p>
-        <p class="photo-preview__text">Видите, как не хватает ваших?</p>
+      <section class="preview">
+        <h2 class="preview__text">Фотографии пользователей</h2>
+        <section class="photo-preview">
+          <div class="photo-preview__text">
+            <p class="photo-preview__item">Взгляните на фотографии, которые выкладывают пользователи!</p>
+            <p class="photo-preview__item">Видите, как не хватает ваших?</p>
+          </div>
+        </section>
       </section>
       <section class="post">
         <h2 class="visually-hidden">Посты</h2>
         <div class="post__wrapper">
           <ul class="post__list">
             <li class="post__item">
-              <div>
-                <img class="post__image-panorama" src="img/levon.jpg" alt="Фото" width="320" height="135">
+              <div class="post-panorama">
+                <img class="post-panorama__image" src="img/panorama-mobile@1x.jpg" alt="Фото" >
+              </div>
+              <div class="post__information">
+                <p class="post__nickname">Анна<span class="post-time">(5 минут назад)</span></p>
+                <p class="post__comment"Прыгать или нет? Напишите в коментарии свой совет и смотрите прямую трансляцию в перископе, задавайте свои вопросы!</p>
+                <div class="post__rate">
+                  <img class="post__heart" src="img/heart.svg" alt="heart">
+                  <p class="post__heart-count">Нравится: 215</p>
+                </div>
+              </div>
+            </li>
+            <li class="post__item">
+              <div class="post-standart">
+                <img class="post__image" src="img/photo-car-mobile@1x.jpg" alt="Фото">
               </div>
               <div class="post__information">
                 <p class="post__nickname">Левон<span class="post-time">(5 часов назад)</span></p>
@@ -61,21 +74,8 @@
               </div>
             </li>
             <li class="post__item">
-              <div>
-                <img class="post__image" src="img/levon.jpg" alt="Фото" width="280" height="180">
-              </div>
-              <div class="post__information">
-                <p class="post__nickname">Левон<span class="post-time">(5 часов назад)</span></p>
-                <p class="post__comment">Вчера он на луну летал, сегодня в руки к нам попал.</p>
-                <div class="post__rate">
-                  <img class="post__heart" src="img/heart.svg" alt="heart">
-                  <p class="post__heart-count">Нравится: 356</p>
-                </div>
-              </div>
-            </li>
-            <li class="post__item">
-              <div>
-                <img class="post__image" src="img/anton.jpg" alt="Фото" width="280" height="180">
+              <div class="post-standart">
+                <img class="post__image" src="img/photo-drumset-mobile@1x.jpg" alt="Фото">
               </div>
               <div class="post__information">
                 <p class="post__nickname">Антон<span class="post-time">(12 часов назад)</span></p>
@@ -87,8 +87,8 @@
               </div>
             </li>
             <li class="post__item">
-              <div>
-                <img class="post__image" src="img/boris.jpg" alt="Фото" width="280" height="180">
+              <div class="post-standart">
+                <img class="post__image" src="img/photo-window-mobile@1x.jpg" alt="Фото">
               </div>
               <div class="post__information">
                 <p class="post__nickname">Борис<span class="post-time">(20 часов назад)</span></p>
@@ -100,8 +100,8 @@
               </div>
             </li>
             <li class="post__item">
-              <div>
-                <img class="post__image" src="img/sergei.jpg" alt="Фото" width="280" height="180">
+              <div class="post-standart">
+                <img class="post__image" src="img/photo-fair-mobile@1x.jpg" alt="Фото">
               </div>
               <div class="post__information">
                 <p class="post__nickname">Сергей<span class="post-time">(25 часов назад)</span></p>
@@ -113,8 +113,8 @@
               </div>
             </li>
             <li class="post__item">
-              <div>
-                <img class="post__image" src="img/maxim.jpg" alt="Фото" width="280" height="180">
+              <div class="post-standart">
+                <img class="post__image" src="img/photo-pov-mobile@1x.jpg" alt="Фото">
               </div>
               <div class="post__information">
                 <p class="post__nickname">Максим<span class="post-time">(40 часов назад)</span></p>
@@ -126,8 +126,8 @@
               </div>
             </li>
             <li class="post__item">
-              <div>
-                <img class="post__image" src="img/nadejda.jpg" alt="Фото" width="280" height="180">
+              <div class="post-standart">
+                <img class="post__image" src="img/photo-wing-mobile@1x.jpg" alt="Фото">
               </div>
               <div class="post__information">
                 <p class="post__nickname">Надежда<span class="post-time">(45 часов назад)</span></p>
@@ -147,8 +147,8 @@
       </section>
       <section class="post-upload">
         <h2 class="visually-hidden">Загрузка поста</h2>
-        <div>
-          <img class="post-upload__photo" src="img/winter.jpg" alt="Winter photo">
+        <div class="post-upload__photo">
+          <img src="img/photo-road-mobile@1x.jpg" alt="Winter photo">
         </div>
         <form class="post-upload__styles" action="#" method="get">
           <fieldset class="post-upload__functions">
@@ -167,25 +167,27 @@
       </section>
     </main>
     <footer class="page-footer">
-      <div class="page-footer__logo">
-        <a href="#"><img src="footer_logo.png" alt="logo" width="150" height="45"></a>
-      </div>
-      <div class="page-footer__social social">
-        <ul class="social__list">
-          <li class="social__item">
-            <a class="social__link social__link--twitter" href="https://twitter.com/">Мы Вконтакте</a>
-          </li>
-          <li class="social__item">
-            <a class="social__link social__link--facebook" href="https://ru-ru.facebook.com/">Мы в Facebook</a>
-          </li>
-          <li class="social__item">
-            <a class="social__link social__link--youtube" href="https://www.youtube.com/">Мы в Youtube</a>
-          </li>
-        </ul>
-      </div>
-      <div class="page-footer__copyright">
-        <a class="page-footer__developed" href="https://htmlacademy.ru/">Разработано</a>
-        <a class="page-footer__logo" href="https://htmlacademy.ru/"></a>
+      <div class="page-footer__wrapper-inside">
+        <div class="page-footer__logo">
+          <a href="#"><img src="img/logo-pink-blue-mobile.svg" alt="logo"></a>
+        </div>
+        <div class="page-footer__social social">
+          <ul class="social__list">
+            <li class="social__item">
+              <a class="social__link social__link--twitter" href="https://twitter.com/"><img src="img/icon-twitter.svg" alt="twitter"></a>
+            </li>
+            <li class="social__item">
+              <a class="social__link social__link--facebook" href="https://ru-ru.facebook.com/"><img src="img/icon-facebook.svg" alt="facebook"></a>
+            </li>
+            <li class="social__item">
+              <a class="social__link social__link--youtube" href="https://www.youtube.com/"><img src="img/icon-youtube.svg" alt="youtube"></a>
+            </li>
+          </ul>
+        </div>
+        <div class="page-footer__copyright">
+          <a class="page-footer__developed" href="https://htmlacademy.ru/">Разработано</a>
+          <a class="page-footer__logo" href="https://htmlacademy.ru/"><img src="img/logo-htmlacademy.svg" alt="logo-htmlacademy"></a>
+        </div>
       </div>
     </footer>
   </body>
