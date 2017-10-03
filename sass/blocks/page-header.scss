@@ -1,3 +1,4 @@
+
 .page-header {
   font-family: $font-stack;
   background-color: rgba(29, 38, 50, 0.3);
@@ -15,4 +16,20 @@
   display: flex;
   justify-content: space-between;
   padding: 0 20px;
+}
+
+.page-header__logo {
+  width: 78px;
+  height: 23px;
+}
+
+@media (min-width: $tablet-width) {
+  .page-header__logo {
+    width: 150px;
+    height: 40px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+
 }

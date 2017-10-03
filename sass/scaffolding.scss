@@ -1,0 +1,18 @@
+body {
+  min-width: 320px;
+  font-size: 18px;
+  line-height: 27px;
+  font-family: $font-stack;
+  color: #f7f4f1;
+  font-style: normal;
+  margin: 0;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.visually-hidden {
+  display: none;
+}
