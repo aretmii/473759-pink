@@ -1,0 +1,68 @@
+.form-data {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.form-data__full-name {
+  border: none;
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  padding: 0 20px;
+}
+
+.form-data__label-names {
+  font-size: 14px;
+  line-height: 30px;
+  color: #d22856;
+}
+
+.form-data__names {
+  font-size: 18px;
+  line-height: 30px;
+  color: #283645;
+}
+
+.form-data__filter {
+  border: none;
+  background-color: #f2f2f2;
+  display: flex;
+  flex-direction: column;
+}
+
+.form-data__legend-filters {
+  color: #d22856;
+  text-align: center;
+}
+
+.form-data__contacts {
+  border: none;
+  color: #d22856;
+  display: flex;
+  flex-direction: column;
+}
+
+.form-data__filter-radio {
+  border: none;
+  display: flex;
+  flex-direction: column;
+}
+
+.form-data__emotions {
+  border: none;
+}
+
+.form-data__submit {
+  background-color: #2aab6d;
+  border: none;
+  font-size: 18px;
+  line-height: 30px;
+  font-weight: bold;
+  color: #ffffff;
+  padding: 24px 48px 24px 48px;
+}
+
+.form-data__star {
+  color: #d22856;
+}
