@@ -7,22 +7,8 @@
   padding-top: 90px;
 }
 
-.price__wrapper {
-  display: flex;
-  flex-direction: column;
-  align-items: stretch;
-}
-
-.price__list {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-}
-
-.price__item {
-  display: flex;
-  flex-direction: column;
-  text-transform: uppercase;
+.price__table {
+  display: table;
 }
 
 .price__text {
@@ -50,26 +36,84 @@
 }
 
 .price-filter {
+  display: table-row;
   list-style: none;
   padding: 0;
 }
 
+.standart {
+  width: 100%;
+}
+
 .price-filter__item {
-  display: flex;
+  display: table-cell;
   justify-content: space-between;
   border-bottom: 1px solid #e5e5e5;
+  padding: 0;
+}
+
+.price-filter__item:nth-child(2),
+.price-filter__item:last-child {
+    display: none;
 }
 
 .price-filter__text {
   padding: 25px 0 25px 45px;
   margin: 0;
+  text-align: center;
 }
 
 .price-filter__img {
-  padding-right: 40px;
+  padding: 0;
 }
 
 .price__toggles {
   display: flex;
   justify-content: center;
+}
+
+@media (min-width: $tablet-width) {
+  .price {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  .price__table {
+    display: table;
+  }
+
+  .price-filter {
+    display: table-row;
+  }
+
+  .price-filter__img {
+    padding: 0;
+  }
+
+  .price-filter__item:nth-child(2),
+  .price-filter__item:last-child {
+      display: table-cell;
+  }
+
+  .price-filter__item{
+    display: table-cell;
+    width: 157px;
+    height: 45px;
+    border: 2px solid #e5e5e5;
+    text-align: center;
+    vertical-align: middle;
+  }
+
+  .price-filter__text {
+    padding: 0;
+  }
+
+  .price__wrapper {
+    width: 620px;;
+  }
+}
+
+@media (min-width: $desktop-width) {
+
 }

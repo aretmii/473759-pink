@@ -1,0 +1,27 @@
+.clock {
+  display: none;
+  order: 1;
+}
+
+@media (min-width: $tablet-width) {
+  .clock {
+    display: flex;
+    justify-content: center;
+  }
+
+  .clock__wrapper {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+  }
+
+  .clock__clocks{
+    width: 300px;
+    height: 275px;
+  }
+
+  .clock__text{
+    width: 310px;
+    height: 276px;
+  }
+}
