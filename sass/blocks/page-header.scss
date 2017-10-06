@@ -24,12 +24,12 @@
   padding: 10px 10px;
 }
 
-.page-header__blueLogo{
+.page-header__blueLogo {
   display: none;
 }
 
 @media (min-width: $tablet-width) {
-  .page-header{
+  .page-header {
     display: flex;
     justify-content: center;
   }
@@ -41,20 +41,20 @@
     justify-content: center;
   }
 
-  .page-header__whiteLogo{
+  .page-header__whiteLogo {
     display: none;
   }
 
-  .page-header__blueLogo{
+  .page-header__blueLogo {
     display: block;
     fill: #ffffff;
   }
 
-  .page-header__blueLogo path{
+  .page-header__blueLogo path {
     fill: #ffffff;
   }
 
-  .page-header__wrapper{
+  .page-header__wrapper {
     min-width: 620px;
   }
 }
@@ -65,7 +65,7 @@
     height: 40px;
   }
 
-  .page-header__wrapper{
+  .page-header__wrapper {
     min-width: 940px;
   }
 

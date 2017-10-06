@@ -22,7 +22,7 @@
   transform: translateY(40px);
 }
 
-.features-image-desk{
+.features-image-desk {
   display: none;
 }
 
@@ -70,7 +70,7 @@
   .features__list {
     text-align: center;
     display: flex;
-    order:3;
+    order: 3;
   }
 
   .features-shape {
@@ -89,7 +89,7 @@
   .features-image {
     min-width: 190px;
     min-height: 300px;
-    transform: translateY(0px);
+    transform: translateY(0);
     order: 5;
   }
 
@@ -104,7 +104,7 @@
     display: block;
     min-width: 190px;
     min-height: 300px;
-    transform: translateY(0px);
+    transform: translateY(0);
     order: 5;
   }
 }

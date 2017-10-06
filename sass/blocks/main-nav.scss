@@ -1,4 +1,4 @@
-.main-nav{
+.main-nav {
   display: none;
 }
 
@@ -23,23 +23,23 @@
   padding: 25px 0;
 }
 
-.main-nav__toggle{
+.main-nav__toggle {
   border: none;
   padding: 0 20px;
 }
 
-@media (min-width: $tablet-width){
+@media (min-width: $tablet-width) {
   .main-nav__list {
     display: none;
   }
 }
 
 @media (min-width: $desktop-width) {
-  .main-nav{
+  .main-nav {
     display: inline-block;
   }
 
-  .main-nav__list{
+  .main-nav__list {
     min-width: 622px;
     display: flex;
     justify-content: space-between;
