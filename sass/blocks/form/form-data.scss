@@ -120,6 +120,7 @@
 
   .form-data__button {
     width: 100%;
+    order: 5;
   }
 
   .form-data__full-name {
@@ -138,7 +139,7 @@
   .form-data__filter {
     width: 100%;
     margin: 0;
-    order: 3
+    order: 3;
   }
 
   .form-data__contacts {
@@ -151,9 +152,4 @@
     width: 100%;
     order: 4;
   }
-
-  .form-data__button {
-    order: 5;
-  }
-
 }
