@@ -25,3 +25,10 @@
     height: 276px;
   }
 }
+
+
+@media (min-width: $desktop-width) {
+  .clock {
+    background-color: #f2f2f2;
+  }
+}

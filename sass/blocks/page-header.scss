@@ -7,7 +7,7 @@
   left: 0;
   right: 0;
   display: flex;
-  max-width: 1200px;
+  width: 100%;
   margin: 0 auto;
 }
 
@@ -15,7 +15,7 @@
   display: flex;
   justify-content: space-between;
   margin: 0 auto;
-  min-width: 280px;
+    width: 87%;
 }
 
 .page-header__logo {
@@ -55,7 +55,7 @@
   }
 
   .page-header__wrapper {
-    min-width: 620px;
+    width: 94%;
   }
 }
 
@@ -66,7 +66,7 @@
   }
 
   .page-header__wrapper {
-    min-width: 940px;
+    width: 70%;
   }
 
   .page-header__wrapper-desktop {

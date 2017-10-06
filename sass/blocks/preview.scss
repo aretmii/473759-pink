@@ -12,9 +12,10 @@
 
 .preview__wrapper {
   min-height: 730px;
+  width: 100%;
   margin: 0 auto;
   background-image: url("../img/mobile2.png");
-  background-position: -15px;
+  background-position: 0 175px;
   background-size: 260px 290px;
   background-repeat: no-repeat;
   display: flex;
@@ -35,13 +36,15 @@
   }
 
   .preview__wrapper {
-    min-width: 620px;
+    width: 94%;
     margin: 0 auto;
     height: inherit;
     background-image: url("../img/mobile2.png");
     background-size: 470px 550px;
-    background-position: bottom;
+    background-position: right bottom;
     background-repeat: no-repeat;
+    flex-direction: row;
+    justify-content: flex-start;
   }
 }
 
@@ -50,5 +53,10 @@
     background-image: url("../img/desktop-background.jpg");
     display: flex;
     min-height: 395px;
+  }
+
+  .preview__wrapper {
+    width: 60%;
+    background-position: right bottom;
   }
 }
