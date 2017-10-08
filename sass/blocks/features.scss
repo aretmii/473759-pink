@@ -1,15 +1,15 @@
 .features {
-  background-color: #ffffff;
-  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: #f2f2f2 url("../img/bg-triangle-white.svg") no-repeat;
+  background-size: contain;
+  background-position-x: -5px;
 }
 
-.features__shape {
-  width: 100%;
-  min-height: 32px;
-  background-image: url("../img/bg-triangle-white.svg");
-  background-repeat: no-repeat;
-  background-size: cover;
+.features__img {
   transform: rotate(180deg);
+  width: 100%;
 }
 
 .features__wrapper {
@@ -27,18 +27,17 @@
   align-items: center;
 }
 
-.features-bg {
-  width: 155px;               //ТРЕБУЕТ ДОРАБОТКИ; ВРЕМЕННОЕ РЕШЕНИЕ
-  height: 280px;              //ТРЕБУЕТ ДОРАБОТКИ; ВРЕМЕННОЕ РЕШЕНИЕ
+.features__bg {
+  width: 160px;
+  height: 275px;
+  background-image: url("../img/iphone-screen-mobile@1x.png");
+  background-repeat: no-repeat;
+  background-size: 160px 310px;
   overflow: hidden;
 }
 
-.features__bg-none {
-  display: none;
-}
-
 .features__list {
-  padding: 0;
+  padding: 50px 0 0 0;
   margin: 0;
   display: flex;
   flex-direction: column;
@@ -46,10 +45,18 @@
 }
 
 .features__item {
-  margin: 0;
+  margin: 0 0 25px 0;
   padding: 0;
   list-style: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.features__item-wrapper {
   text-align: center;
+  width: 87.5%;
 }
 
 .features__title {
@@ -66,18 +73,21 @@
 }
 
 @media (min-width: $tablet-width) {
-  .features__inside-wrapper {
-    width: 93%;
-    min-height: 435px;
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-end;
-    position: relative;
+  .features {
+    flex-direction: row-reverse;
+    align-items: center;
+    background: #f2f2f2 url("../img/bg-triangle-white.svg") no-repeat;
+    background-size: contain;
+    background-position-x: -5px;
   }
 
-  .features-bg {
-    width: 265px;               //ТРЕБУЕТ ДОРАБОТКИ; ВРЕМЕННОЕ РЕШЕНИЕ
-    height: 480px;              //ТРЕБУЕТ ДОРАБОТКИ; ВРЕМЕННОЕ РЕШЕНИЕ
+  .features__bg {
+    width: 270px;
+    height: 485px;
+    background-image: url("../img/iphone-screen-mobile@1x.png");
+    background-repeat: no-repeat;
+    background-size: 270px 550px;
+    overflow: hidden;
   }
 
   .features__list {
@@ -89,6 +99,11 @@
   .features__item {
     text-align: left;
     margin-bottom: 45px;
+  }
+
+  .features__item-wrapper {
+    text-align: left;
+    width: 87.5%;
   }
 
   .features__discription {
@@ -103,6 +118,10 @@
     position: absolute;
     left: 0;
     bottom: 0;
+  }
+
+  .features__item::before{
+    display: none;
   }
 }
 
@@ -125,16 +144,8 @@
     transform: translateY(-100px);
   }
 
-  .features-bg {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
-    align-items: center;
-    height: 300px;
-  }
-
-  .features__bg-none {
-    display: flex;
+  .features__bg {
+    display: none;
   }
 
   .features-image {
@@ -153,11 +164,30 @@
 
   .features__item {
     text-align: center;
-    margin-bottom: 45px;
+    margin-bottom: 45pxs;
     width: 320px;
+    min-height: 555px;
   }
 
   .features__discription {
     text-align: center;
   }
+
+  .features__item::before {
+    content: "";
+    display: block;
+    background-image: url("../img/iphone-screen-mobile@1x.png");
+    background-repeat: no-repeat;
+    background-size: 185px 355px;
+    overflow: hidden;
+    height: 300px;
+    width: 185px;
+    margin-bottom: 60px;
+  }
+
+  .features__item-wrapper {
+    min-height: 200px;
+    text-align: center;
+  }
+
 }
