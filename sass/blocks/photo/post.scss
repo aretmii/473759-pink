@@ -1,7 +1,66 @@
+.post__info-wrapper {
+  display: flex;
+  justify-content: center;
+  padding: 50px 5px;
+}
+
+.post__info {
+  width: 87%;
+  margin: 0;
+  text-align: center;
+  font-size: 18px;
+  line-height: 30px;
+  color: #283645;
+}
+
 .post__list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   list-style: none;
   padding: 0;
   margin: 0;
+}
+
+.post__item {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+  width: 87%;
+  max-width: 300px;
+}
+
+.post__image {
+  width: 100%;
+  max-width: 300px;
+}
+
+.post__item-panorama {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.post__panorama-image {
+  width: 100%;
+}
+
+.post__information-wrapper {
+  width: 87%;
+}
+
+.post__item-small {
+  width: 100%;
+}
+
+.post__list-small {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .post-standart {
@@ -9,17 +68,104 @@
 }
 
 .post__information {
-  margin: 0 20px;
-  padding: 25px 0;
+  padding: 25px 20px 25px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  font-size: 14px;
+  line-height: 24px;
   background-color: #f2f2f2;
 }
 
+.post__nickname {
+  font-weight: bold;
+  margin: 0 0 10px 0;
+}
+
+.post__comment {
+  margin: 0 0 25px 0;
+}
+
+.post__time {
+  font-size: 12px;
+  font-weight: normal;
+  margin-left: 5px;
+}
+
+.post__rate {
+  display: flex;
+}
+
+.post__heart {
+  margin-right: 20px;
+}
+
+.post__heart-count {
+  margin: 0;
+}
+
 .post__end {
-  padding: 50px 0;
+  padding: 50px 20px;
+  font-size: 14px;
+  line-height: 30px;
+  color: #283645;
 }
 
 .post__text {
   text-align: center;
   font-size: 14px;
   line-height: 30px;
+}
+
+
+@media (min-width: $tablet-width) {
+  .post__item {
+    min-height: 455px;
+  }
+
+  .post__information-wrapper {
+    width: 93%;
+  }
+
+  .post__list {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+
+  .post__item-panorama {
+    width: 100%;
+  }
+
+  .post__image {
+    flex-grow: 1;
+  }
+
+  .post__information {
+    min-height: 155px;
+  }
+
+  .post__item-small {
+    width: 93%;
+  }
+
+  .post__list-small {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .post__information-wrapper {
+    width: 78%;
+  }
+
+  .post__item-small {
+    width: 78%;
+  }
 }

@@ -1,11 +1,62 @@
 .preview {
   background-image: url("../img/bg-back-mobile@1x.jpg");
+  background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  font-family: "Open Sans", "MyriadPro", sans-serif;
-  min-height: 400px;
   display: flex;
   flex-direction: column;
-  justify-content: flex-end;
+  justify-content: center;
   align-items: center;
+  min-height: 235px;
+}
+
+.preview__wrapper {
+  min-height: 730px;
+  width: 100%;
+  margin: 0 auto;
+  background-image: url("../img/mobile2.png");
+  background-position: 0 175px;
+  background-size: 260px 290px;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column-reverse;
+}
+
+@media (min-width: $tablet-width) {
+  .preview {
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    min-height: 440px;
+  }
+
+  .preview__image {
+    order: 2;
+    width: 560px;
+  }
+
+  .preview__wrapper {
+    width: 94%;
+    margin: 0 auto;
+    height: inherit;
+    background-image: url("../img/mobile2.png");
+    background-size: 470px 550px;
+    background-position: right bottom;
+    background-repeat: no-repeat;
+    flex-direction: row;
+    justify-content: flex-start;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .preview {
+    background-image: url("../img/desktop-background.jpg");
+    display: flex;
+    min-height: 395px;
+  }
+
+  .preview__wrapper {
+    width: 60%;
+    background-position: right bottom;
+  }
 }
