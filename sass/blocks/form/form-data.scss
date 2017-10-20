@@ -277,7 +277,6 @@
   .form-data__contacts {
     width: 100%;
     order: 2;
-    margin: 0;
     border: 2px solid #e5e5e5;
     margin: 55px 0 0 0;
     padding: 0;
@@ -458,6 +457,7 @@
     margin: 0 auto;
     margin-top: 20px;
     display: flex;
+    flex-direction: row;
     justify-content: space-between;
   }
 

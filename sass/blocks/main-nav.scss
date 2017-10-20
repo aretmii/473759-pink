@@ -113,14 +113,14 @@
   }
 
   .main-nav--opened .main-nav__wrapper {
-  position: absolute;
-  top: 0;
-  left: 0;
-  z-index: 10;
-  margin-top: 70px;
-  width: 100%;
-  background-color: #283645;
-}
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    margin-top: 70px;
+    width: 100%;
+    background-color: #283645;
+  }
 
   .main-nav--opened .site-list__item {
     border-top: 1px solid #485461;
@@ -188,7 +188,7 @@
     padding: 0;
     width: 25px;
     height: 23px;
-    }
+  }
 }
 
 @media (min-width: $desktop-width) {
