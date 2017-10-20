@@ -1,18 +1,48 @@
 .preview-info {
   font-family: $font-stack;
   background-color: #ffffff;
-  padding: 46px 40px 0 40px;
+  padding: 0 40px 0 40px;
 }
 
-.preview-info__text {
+.preview-info__quest {
   font-size: 24px;
   color: #283645;
   text-align: center;
   margin: 25px 0 0 0;
 }
 
+.preview-info__answ {
+  font-size: 24px;
+  color: #283645;
+  text-align: center;
+}
+
 @media (min-width: $tablet-width) {
   .preview-info__text {
     font-size: 40px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .preview-info {
+    min-height: 312px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .preview-info__quest {
+    font-size: 50px;
+    margin: 0;
+    line-height: 60px;
+    font-weight: normal;
+  }
+
+  .preview-info__answ {
+    font-size: 50px;
+    line-height: 60px;
+    margin: 0;
+    font-weight: normal;
   }
 }

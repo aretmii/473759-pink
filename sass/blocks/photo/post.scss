@@ -163,9 +163,22 @@
 @media (min-width: $desktop-width) {
   .post__information-wrapper {
     width: 78%;
+    max-width: 940px;
   }
 
   .post__item-small {
     width: 78%;
+    max-width: 940px;
+  }
+
+  .post__panorama {
+    display: flex;
+    flex-direction: row-reverse;
+    position: absolute;
+    right: 150px;
+  }
+
+  .post__panorama img {
+    margin: 0 0 0 20px;
   }
 }

@@ -3,6 +3,10 @@
   order: 1;
 }
 
+.clock__info {
+  color: #d22856;
+}
+
 @media (min-width: $tablet-width) {
   .clock {
     display: flex;
@@ -26,9 +30,16 @@
   }
 }
 
-
 @media (min-width: $desktop-width) {
   .clock {
     background-color: #f2f2f2;
+    min-height: 480px;
+  }
+
+  .clock__wrapper {
+    max-width: 940px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
   }
 }

@@ -1,3 +1,15 @@
+.form-preview {
+  background-image: url("../img/bg-back-mobile@1x.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 235px;
+}
+
 .form-preview__wrapper {
   display: flex;
   justify-content: center;
@@ -17,7 +29,7 @@
 .form-preview__wrapper-info {
   display: flex;
   justify-content: center;
-  padding: 50px 20px;
+  padding: 50px 0;
 }
 
 .form__info {
@@ -62,6 +74,7 @@
 }
 
 @media (min-width: $desktop-width) {
+
   .form-preview__wrapper {
     width: 80%;
     padding-top: 70px;
@@ -82,13 +95,21 @@
     padding: 0;
     color: #ffffff;
     width: 85%;
+    margin: 105px 0 110px 0;
   }
 
   .form-preview__wrapper-info {
-    width: 80%;
+    width: 100%;
     display: flex;
     justify-content: center;
-    padding: 100px 0 70px 0;
+    padding: 90px 0 65px 0;
+  }
+
+  .form__wrapper {
+    max-width: 940px;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
   }
 
   .form__info {
