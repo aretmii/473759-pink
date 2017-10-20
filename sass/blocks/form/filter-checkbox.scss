@@ -15,34 +15,34 @@
   margin-left: 0;
 }
 
-.filter-checkbox:not(checked) {
+.filter-checkbox {
   position: absolute;
   opacity: 0;
 }
 
-.filter-checkbox:not(checked) + label {
+.filter-checkbox + label {
   position: relative;
   padding: 0 0 0 60px;
   margin-bottom: 40px;
 }
 
-.filter-checkbox:not(checked) + label:last-of-type {
+.filter-checkbox + label:last-of-type {
   margin-bottom: 0;
 }
 
-.filter-checkbox:not(checked) + label:before {
-  content: '';
+.filter-checkbox + label::before {
+  content: " ";
   position: absolute;
   top: -3px;
   left: 0;
   width: 35px;
   height: 35px;
   border: 2px solid #e5e5e5;
-  background: #FFF;
+  background: #ffffff;
 }
 
-.filter-checkbox:not(checked) + label:after {
-  content: '';
+.filter-checkbox + label::after {
+  content: " ";
   position: absolute;
   top: 9px;
   left: 9px;
@@ -53,7 +53,7 @@
   transition: all .2s;
 }
 
-.filter-checkbox:checked + label:after {
+.filter-checkbox:checked + label::after {
   opacity: 1;
 }
 
@@ -75,34 +75,34 @@
     margin-left: 0;
   }
 
-  .filter-checkbox:not(checked) {
+  .filter-checkbox {
     position: absolute;
     opacity: 0;
   }
 
-  .filter-checkbox:not(checked) + label {
+  .filter-checkbox + label {
     position: relative;
     padding: 0 0 0 60px;
     margin-bottom: 50px;
   }
 
-  .filter-checkbox:not(checked) + label:last-of-type {
+  .filter-checkbox + label:last-of-type {
     margin-bottom: 0;
   }
 
-  .filter-checkbox:not(checked) + label:before {
-    content: '';
+  .filter-checkbox + label::before {
+    content: " ";
     position: absolute;
     top: -3px;
     left: 0;
     width: 35px;
     height: 35px;
     border: 2px solid #e5e5e5;
-    background: #FFF;
+    background: #ffffff;
   }
 
-  .filter-checkbox:not(checked) + label:after {
-    content: '';
+  .filter-checkbox + label::after {
+    content: " ";
     position: absolute;
     top: 9px;
     left: 9px;
@@ -110,14 +110,9 @@
     height: 16px;
     background-image: url("../img/icon-yes.svg");
     opacity: 0;
-    transition: all .2s;
   }
 
-  .filter-checkbox:checked + label:after {
+  .filter-checkbox:checked + label::after {
     opacity: 1;
   }
-}
-
-@media (min-width: $desktop-width) {
-
 }

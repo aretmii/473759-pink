@@ -71,6 +71,8 @@
   text-transform: uppercase;
   width: 87.5%;
   transform: translateY(40px);
+  font-size: 14px;
+  line-height: 30px;
 }
 
 .form-data__contacts {
@@ -114,11 +116,6 @@
   text-transform: uppercase;
   font-size: 14px;
   margin: 10px 0 0 20px;
-}
-
-.form-data__legend-filters {
-  font-size: 14px;
-  line-height: 30px;
 }
 
 .form-data__filter-radio {
@@ -172,6 +169,10 @@
   color: #ffffff;
   padding: 20px 48px 24px 48px;
   text-transform: uppercase;
+  width: 87.5%;
+  height: 60px;
+  vertical-align: middle;
+  border-radius: 2px;
 }
 
 .form-data__star {
@@ -188,14 +189,6 @@
   justify-content: space-between;
   align-items: center;
 }
-
-.form-data__submit {
-  width: 87.5%;
-  height: 60px;
-  vertical-align: middle;
-  border-radius: 2px;
-}
-
 
 @media (min-width: $tablet-width) {
   .form-data {
@@ -264,7 +257,6 @@
     order: 3;
     border: 2px solid #e5e5e5;
     background-color: transparent;
-    width: 100%;
   }
 
   .form-data__legend-filters {
@@ -276,9 +268,7 @@
   .form-data__filter-wrapper {
     max-width: 820px;
     min-height: 120px;
-    margin: 0 auto;
-    margin-top: 30px;
-    margin-bottom: 40px;
+    margin: 40px auto;
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
@@ -344,7 +334,7 @@
     margin: 0 60px 0 60px;
   }
 
-  .form-data__emotions-wrapper >  textarea{
+  .form-data__emotions-wrapper > textarea {
     width: 99%;
   }
 
@@ -357,7 +347,6 @@
   .form-data__button {
     width: 100%;
     order: 5;
-    margin: 65px 0 0 0;
     margin: 65px 20px 0 20px;
     display: flex;
     flex-direction: row;
@@ -426,7 +415,6 @@
     max-width: 435px;
     margin: 0 0 50px 35px;
     box-sizing: border-box;
-    margin: 0;
     order: 1;
   }
 
@@ -499,7 +487,7 @@
     margin: 0 60px 0 60px;
   }
 
-  .form-data__emotions-wrapper >  textarea{
+  .form-data__emotions-wrapper > textarea {
     width: 99%;
   }
 

@@ -84,14 +84,11 @@
   &::before,
   &::after {
     content: "";
-
     position: absolute;
     top: 10px;
-    right: 0px;
-
+    right: 0;
     width: 25px;
     height: 2px;
-
     background-color: #ffffff;
   }
 
@@ -122,7 +119,6 @@
   z-index: 10;
   margin-top: 70px;
   width: 100%;
-
   background-color: #283645;
 }
 
@@ -133,15 +129,12 @@
 
   .main-nav--opened .main-nav__wrapper::before {
     content: "";
-
     position: absolute;
     top: 0;
     left: 0;
     z-index: 2;
-
     width: 7px;
     height: 0;
-
     box-shadow: inset 4px 0 7px -2px rgba(0, 0, 0, 0.4);
   }
 
@@ -161,7 +154,6 @@
   .main-nav--nojs .site-list__item--active a {
     padding-right: 21px;
     padding-left: 21px;
-
     text-align: left;
   }
 
@@ -182,12 +174,12 @@
   }
 
   .main-nav--opened {
-  min-height: 109px;
-  border-bottom: 1px solid #000001;
+    min-height: 109px;
+    border-bottom: 1px solid #000001;
   }
 
   .main-nav--opened .main-nav__wrapper {
-  margin-top: 110px;
+    margin-top: 110px;
   }
 
   .main-nav--opened .main-nav__toggle {

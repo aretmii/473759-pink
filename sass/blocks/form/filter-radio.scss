@@ -9,23 +9,23 @@
   cursor: pointer;
 }
 
-.filter-radio:not(checked) {
+.filter-radio {
   position: absolute;
   opacity: 0;
 }
 
-.filter-radio:not(checked) + label {
+.filter-radio + label {
   position: relative;
   padding: 0 0 0 60px;
   margin-bottom: 50px;
 }
 
-.filter-radio:not(checked) + label:last-of-type {
+.filter-radio + label:last-of-type {
   margin-bottom: 0;
 }
 
-.filter-radio:not(checked) + label:before {
-  content: '';
+.filter-radio + label::before {
+  content: " ";
   position: absolute;
   top: -3px;
   left: 0;
@@ -33,11 +33,11 @@
   height: 35px;
   border: 2px solid #e5e5e5;
   border-radius: 50%;
-  background: #FFF;
+  background: #ffffff;
 }
 
-.filter-radio:not(checked) + label:after {
-  content: '';
+.filter-radio + label::after {
+  content: " ";
   position: absolute;
   top: 9px;
   left: 12px;
@@ -46,17 +46,8 @@
   border-radius: 50%;
   background: #d22856;
   opacity: 0;
-  transition: all .2s;
 }
 
-.filter-radio:checked + label:after {
+.filter-radio:checked + label::after {
   opacity: 1;
-}
-
-@media (min-width: $tablet-width) {
-
-}
-
-@media (min-width: $desktop-width) {
-
 }
