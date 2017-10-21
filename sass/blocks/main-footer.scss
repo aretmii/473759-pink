@@ -1,7 +1,3 @@
-.main-footer {
-  display: none;
-}
-
 .main-footer__wrapper-inside {
   display: flex;
   flex-direction: column;
@@ -27,17 +23,19 @@
   .main-footer {
     display: flex;
     justify-content: center;
+    width: 100%;
   }
 
   .main-footer__wrapper-inside {
     flex-direction: row;
-    flex-grow: 1;
-    justify-content: space-around;
+    justify-content: space-between;
+    width: 93.9%;
   }
 }
 
 @media (min-width: $desktop-width) {
   .main-footer__wrapper-inside {
     padding: 40px 0;
+    max-width: 940px;
   }
 }

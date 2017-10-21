@@ -28,20 +28,20 @@
             <path fill="#D22856" d="M60.462,28.016c-0.002-0.009-5.175-21.365-5.175-21.365C54.926,4.303,52.694,0,46.688,0 c-0.829,0-1.5,0.671-1.5,1.5s0.671,1.5,1.5,1.5c4.856,0,5.575,3.729,5.639,4.143l4.767,19.701h-2.073 c-0.742-5.927-5.802-10.531-11.927-10.531s-11.186,4.604-11.927,10.531h-1.82c-0.741-5.927-5.802-10.531-11.927-10.531 S6.235,20.917,5.493,26.844H3.42L8.187,7.143C8.25,6.729,8.97,3,13.826,3c0.829,0,1.5-0.671,1.5-1.5S14.655,0,13.826,0 C7.82,0,5.588,4.303,5.227,6.651c0,0-5.173,21.356-5.175,21.365c-0.266,1.109,0.531,1.826,1.426,1.826 c0.012,0,0.023,0.004,0.036,0.004h3.982c0.741,5.926,5.802,10.53,11.927,10.53s11.185-4.604,11.927-10.53h1.814 c0.742,5.926,5.802,10.53,11.927,10.53s11.186-4.604,11.927-10.53H59c0.012,0,0.023-0.004,0.036-0.004 C59.931,29.842,60.728,29.125,60.462,28.016z M26.315,29.844c-0.715,4.272-4.421,7.531-8.896,7.531s-8.18-3.259-8.896-7.531 c-0.082-0.488-0.135-0.988-0.135-1.5s0.053-1.011,0.135-1.5c0.715-4.271,4.421-7.531,8.896-7.531s8.18,3.26,8.896,7.531 c0.082,0.489,0.135,0.988,0.135,1.5S26.397,29.355,26.315,29.844z M51.99,29.844c-0.716,4.272-4.421,7.531-8.896,7.531 c-4.475,0-8.181-3.259-8.896-7.531c-0.082-0.488-0.135-0.988-0.135-1.5s0.053-1.011,0.135-1.5c0.716-4.271,4.421-7.531,8.896-7.531 c4.475,0,8.181,3.26,8.896,7.531c0.082,0.489,0.135,0.988,0.135,1.5S52.072,29.355,51.99,29.844z"/>
           </svg>
         </a>
-        <button class="main-nav__toggle">Меню</button>
-        <nav class="main-nav">
+        <nav class="main-nav main-nav--opened main-nav--nojs">
+          <button class="main-nav__toggle" type="button"><span class="visually-hidden">Меню</span></button>
           <div class="main-nav__wrapper">
             <ul class="main-nav__list site-list">
-              <li class="main-nav__item site-list__item">
+              <li class="site-list__item">
                 <a href="index.html">Главная</a>
               </li>
-              <li class="main-nav__item site-list__item">
+              <li class="site-list__item">
                 <a href="photo.html">Фотографии</a>
               </li>
-              <li class="main-nav__item site-list__item">
+              <li class="site-list__item">
                 <a href="#">Конкурс</a>
               </li>
-              <li class="main-nav__item site-list__item">
+              <li class="site-list__item">
                 <a href="#">HtmlAcademy</a>
               </li>
             </ul>
@@ -58,69 +58,85 @@
         </div>
       </section>
       <section class="form">
-        <h2 class="visually-hidden">Форма</h2>
-        <div class="form-preview__wrapper-info">
-            <p class="form__info">Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту! Пожалуйста, заполните форму ниже:</p>
-        </div>
-        <form class="form-data" action="https://echo.htmlacademy.ru" method="get">
-          <fieldset class="form-data__full-name">
-            <label class="form-data_label-names" >
-              Фамилия:<br>
-              <input class="form-data__names" type="text" id="surName" placeholder="Укажите фамилию*">
-            </label>
-            <label class="form-data_label-names" >
-              Имя:<br>
-              <input class="form-data__names" type="text" id="firstName" placeholder="Введите ваше имя*">
-            </label>
-            <label class="form-data_label-names" >
-              Отчество:<br>
-              <input class="form-data__names" type="text" id="middleName" placeholder="Ну и отчество тоже*">
-            </label>
-          </fieldset>
-          <fieldset class="form-data__filter">
-            <legend class="form-data__legend-filters">Ваши безбашенные достижения в путешествии</legend>
-            <input class="form-data__checkbox" type="checkbox" value="1" id="shark" name="add[]" checked>
-            <label class="form-data__checkbox-label" for="shark">Сделал селфи с акулой</label>
-            <input class="form-data__checkbox" type="checkbox" value="1" id="beach" name="add[]" checked>
-            <label class="form-data__checkbox-label" for="beach">Обгорел на пляже</label>
-            <input class="form-data__checkbox" type="checkbox" value="1" id="chack" name="add[]">
-            <label class="form-data__checkbox-label" for="chack">Видел Чака Норриса</label>
-            <input class="form-data__checkbox" type="checkbox" value="1" id="souvenir" name="add[]">
-            <label class="form-data__checkbox-label" for="souvenir">Накупил сувениров</label>
-            <input class="form-data__checkbox" type="checkbox" value="1" id="tower" name="add[]" checked>
-            <label class="form-data__checkbox-label" for="tower">Удержал башню</label>
-            <input class="form-data__checkbox" type="checkbox" value="1" id="hotel" name="add[]">
-            <label class="form-data__checkbox-label" for="hotel">Разгромил отель</label>
-          </fieldset>
-          <fieldset class="form-data__contacts">
-            <legend class="form-data__legend-filters">Контактная информация</legend>
-            <label class="form-data_label-phone">
-              Номер телефона<br>
-              <input class="form-data__phone" type="text" id="userPhone" placeholder="Номер, пожалуйста">
-            </label>
-            <label class="form-data_label-mail">
-              Адрес почты<br>
-              <input class="form-data__mail" type="text" id="userMail" placeholder="Введите почту *">
-            </label>
-          </fieldset>
-          <fieldset class="form-data__filter-radio">
-            <legend class="form-data__legend-filters">С каким приложением путешествовали?</legend>
-            <input class="form-data__radio" type="radio" id="ios" checked>
-            <label class="form-data__radio-label" for="ios"><span class="form__radio-pink">Pink</span> для iOS</label>
-            <input class="form-data__radio" type="radio" value="1" id="android" name="add[]">
-            <label class="form-data__radio-label" for="android"><span class="form__radio-pink">Pink</span> на Android</label>
-            <input class="form-data__radio" type="radio" value="1" id="windows" name="add[]">
-            <label class="form-data__radio-label" for="windows">Windows Phone</label>
-          </fieldset>
-          <fieldset class="form-data__emotions">
-            <legend class="form-data__legend-filters">Опишите свои эмоции</legend>
-            <textarea rows="8" cols="35" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
-          </fieldset>
-          <div class="form-data__button">
-            <button class="form-data__submit" type="submit">Отправить форму</button>
-            <p class="form-data__note"><span class="form-data__star">*</span> - обязательные поля</p>
+        <div class="form__wrapper">
+          <h2 class="visually-hidden">Форма</h2>
+          <div class="form-preview__wrapper-info">
+              <p class="form__info">Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту! Пожалуйста, заполните форму ниже:</p>
           </div>
-        </form>
+          <form class="form-data" action="https://echo.htmlacademy.ru" method="get">
+            <fieldset class="form-data__full-name">
+              <label class="form-data__label-names">
+                <span class="form-data__title">Фамилия:</span>
+                <input class="form-data__names" type="text" id="surName" placeholder="Укажите фамилию*">
+              </label>
+              <label class="form-data__label-names" >
+                <span class="form-data__title">Имя:</span>
+                <input class="form-data__names" type="text" id="firstName" placeholder="Введите ваше имя*">
+              </label>
+              <label class="form-data__label-names" >
+                <span class="form-data__title">Отчество:</span>
+                <input class="form-data__names" type="text" id="middleName" placeholder="Ну и отчество тоже*">
+              </label>
+            </fieldset>
+            <fieldset class="form-data__filter">
+              <legend class="form-data__legend-filters">Ваши безбашенные достижения в путешествии</legend>
+              <div class="form-data__filter-wrapper">
+                <div class="filter-checkbox__wrapper">
+                  <input class="filter-checkbox" type="checkbox" value="1" id="shark" name="add[]" checked>
+                  <label class="filter-checkbox-label" for="shark">Сделал селфи с акулой</label>
+                  <input class="filter-checkbox" type="checkbox" value="1" id="beach" name="add[]" checked>
+                  <label class="filter-checkbox-label" for="beach">Обгорел на пляже</label>
+                </div>
+                <div class="filter-checkbox__wrapper">
+                  <input class="filter-checkbox" type="checkbox" value="1" id="chack" name="add[]">
+                  <label class="filter-checkbox-label" for="chack">Видел Чака Норриса</label>
+                  <input class="filter-checkbox" type="checkbox" value="1" id="souvenir" name="add[]">
+                  <label class="filter-checkbox-label" for="souvenir">Накупил сувениров</label>
+                </div>
+                <div class="filter-checkbox__wrapper">
+                  <input class="filter-checkbox" type="checkbox" value="1" id="tower" name="add[]" checked>
+                  <label class="filter-checkbox-label" for="tower">Удержал башню</label>
+                  <input class="filter-checkbox" type="checkbox" value="1" id="hotel" name="add[]">
+                  <label class="filter-checkbox-label" for="hotel">Разгромил отель</label>
+                </div>
+              </div>
+            </fieldset>
+            <fieldset class="form-data__contacts">
+              <legend class="form-data__contacts-filters">Контактная информация</legend>
+              <div class="form-data__wrapper-contacts">
+                <div class="form-data__wrapper-inner-contacts">
+                  <label class="form-data__label-phone">Номер телефона</label>
+                  <input class="form-data__phone" type="text" id="userPhone" placeholder="Номер, пожалуйста">
+                </div>
+                <div class="form-data__wrapper-inner-contacts">
+                  <label class="form-data__label-mail">Адрес почты</label>
+                  <input class="form-data__mail" type="text" id="userMail" placeholder="Введите почту *">
+                </div>
+              </div>
+            </fieldset>
+            <fieldset class="form-data__filter-radio">
+              <legend class="form-data__legend-radio">С каким приложением путешествовали?</legend>
+              <div class="form-data__wrapper">
+                <input class="filter-radio" type="radio" id="ios" name="add[]">
+                <label class="filter-radio__label" for="ios"><span class="form__radio-pink">Pink</span> для iOS</label>
+                <input class="filter-radio" type="radio" value="1" id="android" name="add[]">
+                <label class="filter-radio__label" for="android"><span class="form__radio-pink">Pink</span> на Android</label>
+                <input class="filter-radio" type="radio" value="1" id="windows" name="add[]">
+                <label class="filter-radio__label" for="windows">Windows Phone</label>
+              </div>
+            </fieldset>
+            <fieldset class="form-data__emotions">
+              <legend class="form-data__legend-emotions">Опишите свои эмоции</legend>
+              <div class="form-data__emotions-wrapper">
+                <textarea rows="8" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
+              </div>
+            </fieldset>
+            <div class="form-data__button">
+              <button class="form-data__submit" type="submit">Отправить форму</button>
+              <p class="form-data__note"><span class="form-data__star">*</span> - обязательные поля</p>
+            </div>
+          </form>
+        </div>
       </section>
     </main>
     <footer class="main-footer">
@@ -147,5 +163,21 @@
         </div>
       </div>
     </footer>
+    <script>
+      var navMain = document.querySelector('.main-nav');
+      var navToggle = document.querySelector('.main-nav__toggle');
+
+      navMain.classList.remove('main-nav--nojs');
+
+      navToggle.addEventListener('click', function() {
+        if (navMain.classList.contains('main-nav--closed')) {
+          navMain.classList.remove('main-nav--closed');
+          navMain.classList.add('main-nav--opened');
+        } else {
+          navMain.classList.add('main-nav--closed');
+          navMain.classList.remove('main-nav--opened');
+        }
+      });
+    </script>
   </body>
 </html>

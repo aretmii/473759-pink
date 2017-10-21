@@ -1,0 +1,41 @@
+.site-list {
+  font-weight: bold;
+}
+
+.site-list a {
+  text-decoration: none;
+  text-align: center;
+  color: #ffffff;
+  display: block;
+  padding: 15.4px 0;
+
+  font-size: 18px;
+  line-height: 32px;
+  text-transform: uppercase;
+
+  background-color: transparent;
+}
+
+.site-list a[href] {
+  &:hover {
+    color: #af2c52;
+  }
+
+  &:active {
+    color: #7f858c;
+    border-bottom: 1px solid #ffffff;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .site-list__item a {
+    font-size: 18px;
+    font-weight: normal;
+    line-height: 18px;
+    text-transform: none;
+  }
+
+  .site-list__item-upper {
+    text-transform: uppercase;
+  }
+}

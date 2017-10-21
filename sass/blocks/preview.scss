@@ -27,7 +27,6 @@
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    min-height: 440px;
   }
 
   .preview__image {
@@ -37,6 +36,7 @@
 
   .preview__wrapper {
     width: 94%;
+    max-width: 940px;
     margin: 0 auto;
     height: inherit;
     background-image: url("../img/mobile2.png");
@@ -52,11 +52,11 @@
   .preview {
     background-image: url("../img/desktop-background.jpg");
     display: flex;
-    min-height: 395px;
   }
 
   .preview__wrapper {
     width: 60%;
+    min-height: 853px;
     background-position: right bottom;
   }
 }

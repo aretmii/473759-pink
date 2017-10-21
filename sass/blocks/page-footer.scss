@@ -36,11 +36,20 @@
   text-decoration: none;
 }
 
-.contacts-title {
+.page-footer__contacts-title {
   color: #283645;
   font-size: 18px;
   padding: 0;
   margin: 0;
+}
+
+.page-footer__shape {
+  background-image: url("../img/bg-triangle-white-footer.svg");
+  align-items: center;
+  background-size: 100%;
+  background-position-x: -5px;
+  background-repeat: no-repeat;
+  height: 300px;
 }
 
 @media (min-width: $tablet-width) {
@@ -51,7 +60,7 @@
     background-color: #ffffff;
   }
 
-  .contact-item {
+  .page-footer__contact-item {
     width: 245px;
   }
 }
