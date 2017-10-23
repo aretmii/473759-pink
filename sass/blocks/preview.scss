@@ -61,8 +61,7 @@
 
 /*Для IE 11 */
 
-@media (min-width: 768px) and (min-resolution: 144dpi),
-       (min-width: 768px) and (min-resolution: 1.5dppx) {
+@media (min-width: 768px) and (min-resolution: 144dpi), (min-width: 768px) and (min-resolution: 1.5dppx) {
   .preview {
     background-image: url("../img/bg-back-desktop@2x.jpg");
     background-size: 1200px auto;
