@@ -19,6 +19,11 @@
   transform: translateY(-5px);
 }
 
+.main-footer__index--mobile {
+  display: none;
+}
+
+
 @media (min-width: $tablet-width) {
   .main-footer {
     display: flex;
