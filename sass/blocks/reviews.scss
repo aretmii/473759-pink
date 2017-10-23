@@ -16,6 +16,7 @@
   font-style: normal;
   line-height: 24px;
   font-size: 18px;
+  margin-top: 0;
 }
 
 .reviews__text {
@@ -30,10 +31,6 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-}
-
-.reviews__author-name {
-  margin-top: 0;
 }
 
 .reviews__author-description {
@@ -124,11 +121,10 @@
   .reviews__arrow-left {
     display: flex;
     align-items: center;
-
   }
 
   .reviews__arrow-right svg > path,
-  .reviews__arrow-left svg > path{
+  .reviews__arrow-left svg > path {
     fill: #c2c6ca;
   }
 
