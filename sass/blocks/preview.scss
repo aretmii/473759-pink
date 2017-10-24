@@ -53,7 +53,7 @@
     background-image: url("../img/iphone-hand-tablet@1x.png");
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-      background-image: url("../img/iphone-hand-tablet@2x.jpg");
+      background-image: url("../img/iphone-hand-tablet@2x.png");
       background-size: 1400px auto;
     }
 
@@ -96,7 +96,7 @@
     background-image: url("../img/iphone-hand-desktop@1x.png");
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-      background-image: url("../img/iphone-hand-desktop@2x.jpg");
+      background-image: url("../img/iphone-hand-desktop@2x.png");
       background-size: 2100px auto;
     }
   }
