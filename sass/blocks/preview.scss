@@ -1,4 +1,5 @@
-.preview {
+.preview,
+.preview__photo {
   background-image: url("../img/bg-back-mobile@1x.jpg");
   background-position: top;
   background-repeat: no-repeat;
@@ -6,28 +7,29 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  width: 100%;
 }
 
 .preview__wrapper {
-  min-height: 730px;
   width: 100%;
   margin: 0 auto;
   background-image: url("../img/iphone-hand-mobile@1x.png");
 
   @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
     background-image: url("../img/iphone-hand-mobile@2x.png");
-    background-size: 516px auto;
+    background-size: 258px auto;
   }
 
-  background-position: 0 105px;
-  background-size: 260px 290px;
+  background-position: 0 175px;
+  background-size: 258px auto;
   background-repeat: no-repeat;
   display: flex;
   flex-direction: column-reverse;
 }
 
 @media (min-width: $tablet-width) {
-  .preview {
+  .preview,
+  .preview__photo {
     flex-direction: row;
     justify-content: center;
     align-items: center;
@@ -54,7 +56,7 @@
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
       background-image: url("../img/iphone-hand-tablet@2x.png");
-      background-size: 1400px auto;
+      background-size: 700px auto;
     }
 
     background-size: 700px auto;
@@ -68,14 +70,16 @@
 /*Для IE 11 */
 
 @media (min-width: 768px) and (min-resolution: 144dpi), (min-width: 768px) and (min-resolution: 1.5dppx) {
-  .preview {
+  .preview,
+  .preview__photo {
     background-image: url("../img/bg-back-desktop@2x.jpg");
     background-size: 1200px auto;
   }
 }
 
 @media (min-width: $desktop-width) {
-  .preview {
+  .preview,
+  .preview__photo {
     background-image: url("../img/bg-back-desktop@1x.jpg");
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
@@ -97,7 +101,7 @@
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
       background-image: url("../img/iphone-hand-desktop@2x.png");
-      background-size: 2100px auto;
+      background-size: 1050px auto;
     }
   }
 }

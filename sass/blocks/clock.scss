@@ -22,11 +22,49 @@
 
   .clock__clocks {
     width: 300px;
+    position: relative;
+  }
+
+  .clock__clocks svg {
+    width: 238px;
+  }
+
+  .clock__inner {
+    border: 15px #d22856 solid;
+    border-radius: 50%;
+    width: 202px;
+    height: 202px;
+    position: absolute;
+    top: 91px;
+    left: 18px;
+    box-sizing: border-box;
+    font-size: 96px;
+    font-weight: bold;
+    color: #d22856;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: $font-stack;
+  }
+
+  .clock__inner span {
+    transform: translateY(-5px);
   }
 
   .clock__text {
     width: 310px;
     height: 276px;
+  }
+
+  .clock__title {
+    font-size: 30px;
+    line-height: 36px;
+  }
+
+  .clock__par {
+    font-size: 14px;
+    line-height: 24px;
+    color: #283645;
   }
 }
 
@@ -49,10 +87,42 @@
     flex-grow: 1;
   }
 
+  .clock__clocks svg {
+    width: 100%;
+  }
+
+  .clock__inner {
+    border: 20px #d22856 solid;
+    border-radius: 50%;
+    width: 253px;
+    height: 253px;
+    position: absolute;
+    top: 70px;
+    left: 52px;
+    box-sizing: border-box;
+    font-size: 120px;
+    font-weight: bold;
+    color: #d22856;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: $font-stack;
+  }
+
   .clock__text {
     display: flex;
     flex-direction: column;
     justify-content: center;
     flex-grow: 5;
+  }
+
+  .clock__title {
+    font-size: 30px;
+    line-height: 30px;
+  }
+
+  .clock__par {
+    font-size: 18px;
+    line-height: 24px;
   }
 }

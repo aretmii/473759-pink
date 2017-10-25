@@ -1,5 +1,5 @@
 .main-nav {
-  position: relative;
+  position: absolute;
   width: 100%;
   margin: 0 auto;
   margin-top: 0;
@@ -65,16 +65,20 @@
 
 .main-nav--opened {
   min-height: 69px;
-  border-bottom: 1px solid #000001;
-  background-color: #283645;
+  background-color: transparent;
   z-index: 0;
   display: block;
 }
 
+.main-nav--opened .main-nav__wrapper {
+  border-top: 1px solid #000000;
+}
+
 .main-nav--opened .main-nav__toggle {
   top: 21px;
-  right: 19px;
+  right: 30px;
   padding: 0;
+  position: fixed;
 
   &::before,
   &::after {
@@ -108,7 +112,7 @@
   }
 
   .main-nav--opened .main-nav__wrapper {
-    position: absolute;
+    position:relative;
     top: 0;
     left: 0;
     z-index: 10;
@@ -166,24 +170,30 @@
   .main-nav--closed .main-nav__toggle {
     top: 44px;
     right: 20px;
+    z-index: 1;
   }
 
   .main-nav--opened {
     min-height: 109px;
-    border-bottom: 1px solid #000001;
+    background-color: transparent;
+    z-index: 0;
+    display: block;
   }
 
   .main-nav--opened .main-nav__wrapper {
     margin-top: 110px;
+    border-top: 1px solid #000000;
   }
 
   .main-nav--opened .main-nav__toggle {
     top: 45px;
-    right: 19px;
+    right: 25px;
     padding: 0;
     width: 25px;
     height: 23px;
+    position: fixed;
   }
+
 }
 
 @media (min-width: $desktop-width) {

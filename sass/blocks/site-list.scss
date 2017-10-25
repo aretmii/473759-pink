@@ -2,18 +2,20 @@
   font-weight: bold;
 }
 
+.site-list__item {
+  display: flex;
+  justify-content: center;
+}
+
 .site-list a {
   text-decoration: none;
   text-align: center;
   color: #ffffff;
-  display: block;
-  padding: 15.4px 0;
-
+  display: inline-block;
   font-size: 18px;
-  line-height: 32px;
   text-transform: uppercase;
-
   background-color: transparent;
+  padding: 25px 0;
 }
 
 .site-list a[href] {
@@ -23,7 +25,6 @@
 
   &:active {
     color: #7f858c;
-    border-bottom: 1px solid #ffffff;
   }
 }
 
@@ -37,5 +38,29 @@
 
   .site-list__item-upper {
     text-transform: uppercase;
+  }
+
+  .site-list a {
+    text-decoration: none;
+    text-align: center;
+    color: #ffffff;
+    display: inline-block;
+    font-size: 18px;
+    height: 32px;
+    background-color: transparent;
+    margin-top: 0;
+    padding: 35px 0 25px 0;
+  }
+
+  .site-list a[href] {
+    &:hover {
+      color: #af2c52;
+    }
+
+    &:active {
+      color: #7f858c;
+      border-bottom: 2px solid #ffffff;
+      box-sizing: border-box;
+    }
   }
 }
