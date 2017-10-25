@@ -148,6 +148,7 @@
     display: table-cell;
     border: 2px solid #e5e5e5;
     padding: 0;
+    width: auto;
   }
 
   .price__toggles {
@@ -198,10 +199,6 @@
   .price-filter__cell-top:nth-child(2),
   .price-filter__cell-top:nth-child(4) {
     display: table-cell;
-  }
-
-  .price-filter__cell-top {
-    width: auto;
   }
 
   .price-filter__cell:nth-child(2),
@@ -275,7 +272,6 @@
   }
 
   .price__title {
-    padding-bottom: 0;
     font-size: 18px;
     line-height: 30px;
     font-weight: bold;
