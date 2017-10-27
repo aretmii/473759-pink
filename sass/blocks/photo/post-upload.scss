@@ -15,25 +15,48 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  width: 87.5%;
+  margin: 0 auto;
 }
 
-.post__upload-list {
-  display: flex;
-  justify-content: space-between;
-  margin: 0;
-  padding: 0;
-  width: 65%;
-}
-
-.post-upload__item {
-  margin: 0 0 20px 0;
-  padding: 0;
-  text-align: center;
-  list-style: none;
-}
-
-.post-upload__functions {
+.post-upload__fieldset {
   border: none;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+}
+
+.post-upload__option {
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+}
+
+.post-upload__option label {
+  display: block;
+  font-weight: normal;
+  line-height: 21px;
+  font-size: 14px;
+}
+
+.post-upload__option input[type="checkbox"] {
+  display: none;
+}
+
+.post-upload__option input[type="checkbox"] + label > svg > .post-upload__color {
+  fill: #b5b9be;
+}
+
+.post-upload__option input[type=checkbox]:checked + label > svg > .post-upload__color {
+  fill: #d22856;
+}
+
+.post-upload__option input[type=checkbox]:hover + label > svg > .post-upload__color {
+  fill: #8d949b;
+}
+
+.filter-option-label-last {
+  text-align: center;
 }
 
 .post-upload__buttons {
@@ -48,9 +71,11 @@
 .post-upload__post,
 .post-upload__cancel {
   border-radius: 35px;
-  padding: 20px 90px;
+  padding: 20px 0;
   margin-bottom: 10px;
   background-color: #f2f2f2;
+  outline: none;
+  width: 280px;
 }
 
 .post-upload__post {
@@ -60,6 +85,16 @@
   line-height: 18px;
 }
 
+.post-upload__post:hover {
+  background-color: #d22856;
+  color: #ffffff;
+}
+
+.post-upload__post:active {
+  background-color: #d22856;
+  color: rgba(255, 255, 255, 0.3);
+}
+
 .post-upload__cancel {
   border: solid 2px #dddfe0;
   color: #dddfe0;
@@ -67,13 +102,141 @@
   line-height: 18px;
 }
 
+.post-upload__cancel:hover {
+  border: solid 2px #b5b9be;
+  color: #c2c4c7;
+}
+
+.post-upload__cancel:active {
+  background-color: #b5b9be;
+  color: #c2c4c7;
+}
+
 .post-upload__range {
   border: none;
+  width: 100%;
+}
+
+.post-upload__range input {
+  width: 90%;
+  outline: none;
 }
 
 @media (min-width: $tablet-width) {
   .post-upload {
     flex-direction: row;
     justify-content: center;
+  }
+
+  .post-upload__wrapper {
+    padding: 55px 0;
+    max-width: 300px;
+  }
+
+  .post-upload__fieldset {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    width: auto;
+  }
+
+  .post-upload__option {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 50px
+  }
+
+  .post-upload__option label {
+    display: block;
+    font-weight: normal;
+    line-height: 21px;
+    font-size: 14px;
+  }
+
+  .post-upload__range {
+    border: none;
+    width: 240px;
+    padding: 0;
+  }
+
+  .post-upload__range input {
+    width: 90%;
+    margin: 27px 20px;
+  }
+
+  .post-upload__inner {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    width: 93.9%;
+  }
+
+  .post-upload__photo {
+    min-width: 300px;
+  }
+
+  .post-upload__post,
+  .post-upload__cancel {
+    width: 260px;
+    padding: 18px 0;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .post-upload {
+    width: 78.3%;
+    margin: 0 auto;
+  }
+
+  .post-upload__wrapper {
+    max-width: 410px;
+  }
+
+  .post-upload__inner {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    width: 78.3%;
+  }
+
+  .post-upload__fieldset {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    width: 100%;
+  }
+
+  .post-upload__option {
+    margin-left: 25px;
+  }
+
+  .post-upload__range {
+    border: none;
+    width: 290px;
+    padding: 0 25px;
+  }
+
+  .post-upload__range input {
+    margin: 27px 20px;
+  }
+
+  .post-upload__buttons {
+    width: 100%;
+    border-top: 1px #dddfe0 solid;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 120px 0 0 0;
+    margin: 0;
+  }
+
+  .post-upload__post,
+  .post-upload__cancel {
+    width: 180px;
+    padding: 18px 0;
+    box-sizing: border-box;
   }
 }

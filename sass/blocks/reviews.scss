@@ -128,6 +128,16 @@
     fill: #c2c6ca;
   }
 
+  .reviews__arrow-right:hover svg > path,
+  .reviews__arrow-left:hover svg > path {
+    fill: #7e868f;
+  }
+
+  .reviews__arrow-right:active svg > path,
+  .reviews__arrow-left:active svg > path {
+    fill: #e9ebec;
+  }
+
   .reviews__quotes {
     display: block;
     margin: 0 auto;

@@ -20,11 +20,11 @@
 
 .site-list a[href] {
   &:hover {
-    color: #af2c52;
+    color: #d22856;
   }
 
   &:active {
-    color: #7f858c;
+    color: #6d3650;
   }
 }
 
@@ -59,8 +59,11 @@
 
     &:active {
       color: #7f858c;
-      border-bottom: 2px solid #ffffff;
-      box-sizing: border-box;
     }
+  }
+
+  .site-list__active {
+    border-bottom: 2px solid #ffffff;
+    box-sizing: border-box;
   }
 }
