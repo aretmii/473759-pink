@@ -52,12 +52,15 @@
 .form-data__names::-webkit-input-placeholder {
   text-indent: 25px;
 }
+
 .form-data__names::-moz-placeholder {
   text-indent: 25px;
 }
+
 .form-data__names:-moz-placeholder {
   text-indent: 25px;
 }
+
 .form-data__names:-ms-input-placeholder {
   text-indent: 25px;
 }
@@ -188,7 +191,7 @@
   border: none;
   font-size: 18px;
   font-weight: bold;
-  color: rgba(255, 255, 255, 1.0);
+  color: rgba(255, 255, 255, 1);
   padding: 20px 48px 24px 48px;
   text-transform: uppercase;
   width: 87.5%;

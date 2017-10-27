@@ -17,15 +17,15 @@
   margin: 5px 15px 0 0;
 }
 
-.main-footer__logo svg > path{
+.main-footer__logo svg > path {
   fill: #d22856;
 }
 
-.main-footer__logo:hover svg > path{
+.main-footer__logo:hover svg > path {
   fill: #283645;
 }
 
-.main-footer__logo:active svg > path{
+.main-footer__logo:active svg > path {
   fill: #bec2c7;
 }
 
@@ -33,11 +33,11 @@
   display: none;
 }
 
-.main-footer__logo-mobile:hover g > path{
+.main-footer__logo-mobile:hover g > path {
   fill: #d22856;
 }
 
-.main-footer__logo-mobile:active g > path{
+.main-footer__logo-mobile:active g > path {
   fill: #bec2c7;
 }
 
@@ -62,11 +62,11 @@
     display: block;
   }
 
-  .main-footer__logo-desk:hover .main-footer__logo-color path{
+  .main-footer__logo-desk:hover .main-footer__logo-color path {
     fill: #d22856;
   }
 
-  .main-footer__logo-desk:active .main-footer__logo-color path{
+  .main-footer__logo-desk:active .main-footer__logo-color path {
     fill: #bec2c7;
   }
 
