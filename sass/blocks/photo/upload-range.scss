@@ -2,20 +2,14 @@
   display: none;
 }
 
-.upload-range input[type=range] {
-  -webkit-appearance: none
-}
-
-.upload-range input[type=range] {
-  -webkit-appearance: none;
+.upload-range input[type="range"] {
   width: 240px;
   border-radius: 8px;
   height: 2px;
   background-color: #283645;
 }
 
-.upload-range input[type='range']::-webkit-slider-thumb {
-  -webkit-appearance: none;
+.upload-range input[type="range"]::-webkit-slider-thumb {
   background-color: #f2f2f2;
   border: 2px solid #d22856;
   width: 14px;
@@ -23,7 +17,7 @@
   border-radius: 50%;
   box-sizing: border-box;
   cursor: pointer;
-  }
+}
 
 @media (min-width: $tablet-width) {
   .upload-range__hidden {
@@ -33,23 +27,17 @@
   .upload-range__wrapper {
     border-bottom: 1px solid #dddfe0;
     width: 300px;
-    margin-left:  -50px;
+    margin-left: -50px;
   }
 
-  .upload-range input[type=range] {
-    -webkit-appearance: none
-}
-
-  .upload-range input[type=range] {
-    -webkit-appearance: none;
+  .upload-range input[type="range"] {
     width: 200px;
     border-radius: 8px;
     height: 2px;
     background-color: #283645;
   }
 
-  .upload-range input[type='range']::-webkit-slider-thumb {
-    -webkit-appearance: none;
+  .upload-range input[type="range"]::-webkit-slider-thumb {
     background-color: #f2f2f2;
     border: 2px solid #d22856;
     width: 14px;
@@ -67,20 +55,14 @@
     margin-left: -80px;
   }
 
-  .upload-range input[type=range] {
-    -webkit-appearance: none
-}
-
-  .upload-range input[type=range] {
-    -webkit-appearance: none;
+  .upload-range input[type="range"] {
     width: 290px;
     border-radius: 8px;
     height: 2px;
     background-color: #283645;
   }
 
-  .upload-range input[type='range']::-webkit-slider-thumb {
-    -webkit-appearance: none;
+  .upload-range input[type="range"]::-webkit-slider-thumb {
     background-color: #f2f2f2;
     border: 2px solid #d22856;
     width: 14px;
@@ -88,5 +70,5 @@
     border-radius: 50%;
     box-sizing: border-box;
     cursor: pointer;
-    }
+  }
 }

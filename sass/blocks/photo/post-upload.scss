@@ -64,7 +64,7 @@
   border-top: 1px #dddfe0 solid;
   display: flex;
   flex-direction: column;
-  padding: 40px 20px 0 20px;
+  padding: 80px 20px 0 20px;
   margin: 20px 0;
 }
 
@@ -149,7 +149,7 @@
     width: 27px;
   }
 
-  .post-upload__option label  {
+  .post-upload__option label {
     display: block;
     font-weight: normal;
     line-height: 21px;
@@ -163,7 +163,7 @@
   }
 
   .filter-option-label-last {
-      text-align: left;
+    text-align: left;
   }
 
   .post-upload__option .filter-option-label-last svg {
@@ -204,10 +204,6 @@
     padding: 18px 0;
   }
 }
-
-  .post-upload__buttons {
-    padding-top: 80px;
-  }
 
 @media (min-width: $desktop-width) {
   .post-upload {
@@ -272,7 +268,7 @@
   }
 
   .filter-option-label-last {
-      text-align: left;
+    text-align: left;
   }
 
   .post-upload__option .filter-option-label-last svg {
