@@ -256,11 +256,12 @@
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
       background-image: url("../img/iphone-screen-1-desktop@2x.png");
-      background-size: 292px auto;
+      background-size: cover;
     }
 
     background-repeat: no-repeat;
     background-position: center;
+    background-size: cover;
   }
 
   .features__item--world::before {
@@ -268,12 +269,12 @@
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
       background-image: url("../img/iphone-screen-2-desktop@2x.png");
-      background-size: 292px auto;
+      background-size: cover;
     }
 
     background-repeat: no-repeat;
     background-position: center;
-    background-size: 292px auto;
+    background-size: cover;
   }
 
   .features__item--friends::before {
@@ -281,11 +282,12 @@
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
       background-image: url("../img/iphone-screen-3-desktop@2x.png");
-      background-size: 292px auto;
+      background-size: cover;
     }
 
     background-repeat: no-repeat;
     background-position: center;
+    background-size: cover;
     height: 300px;
     width: 270px;
     left: 0;
