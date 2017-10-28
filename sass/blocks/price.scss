@@ -271,9 +271,13 @@
   .price__table {
     width: 100%;
     max-width: 940px;
-    margin: 0 auto;
+    margin: 45px auto 60px auto;
     border-collapse: collapse;
     transform: translateY(15px);
+  }
+
+  .price-filter__item {
+    width: 235px;
   }
 
   .price-filter__item-top {
@@ -281,11 +285,11 @@
   }
 
   .price-filter__cell {
-    max-width: 235px;
+    width: 240px;
   }
 
   .price-filter__cell-top {
-    max-width: 235px;
+    width: 240px;
   }
 
 
@@ -322,12 +326,14 @@
   }
 
   .price__text {
-    padding: 20px 0 20px 0;
+    padding: 18px 0 18px 0;
   }
 
   .price-filter__text {
     font-size: 18px;
     line-height: 30px;
+    text-align: left;
+    margin-left: 25px;
   }
 
   .price__description {

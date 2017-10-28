@@ -1,16 +1,17 @@
 .post__info-wrapper {
   display: flex;
   justify-content: center;
-  padding: 50px 5px;
+  padding: 0 5px;
 }
 
 .post__info {
   width: 87%;
   margin: 0;
   text-align: center;
-  font-size: 18px;
+  font-size: 14px;
   line-height: 30px;
   color: #283645;
+  padding: 50px 0 50px 0;
 }
 
 .post__list {
@@ -42,6 +43,13 @@
   margin-bottom: 20px;
 }
 
+.post__panorama {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+}
+
 .post__panorama-image {
   width: 100%;
   vertical-align: bottom;
@@ -69,7 +77,17 @@
 }
 
 .post__information {
-  padding: 25px 20px 25px 20px;
+  padding: 20px 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  font-size: 14px;
+  line-height: 24px;
+  background-color: #f2f2f2;
+}
+
+.post__information--panorama{
+  padding: 20px 15px;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -80,33 +98,47 @@
 
 .post__nickname {
   font-weight: bold;
-  margin: 0 0 10px 0;
+  margin: 0;
 }
 
 .post__comment {
-  margin: 0 0 25px 0;
+  margin: 0;
+  font-size: 14px;
+  line-height: 24px;
 }
 
 .post__time {
   font-size: 12px;
   font-weight: normal;
   margin-left: 5px;
+  text-transform: uppercase;
 }
 
 .post__rate {
+  width: 100%;
   display: flex;
+  align-items: center;
+  margin-top: 10px;
 }
 
 .post__heart {
   margin-right: 20px;
 }
 
+.post__heart g > path {
+  fill: #d22856;
+}
+
 .post__heart-count {
   margin: 0;
+  text-transform: uppercase;
+  color: #d22856;
+  font-size: 12px;
+  line-height: 24px;
 }
 
 .post__end {
-  padding: 50px 20px;
+  padding: 20px 20px 40px 20px;
   font-size: 14px;
   line-height: 30px;
   color: #283645;
@@ -116,12 +148,14 @@
   text-align: center;
   font-size: 14px;
   line-height: 30px;
+  margin: 0;
 }
 
 
 @media (min-width: $tablet-width) {
   .post__item {
     min-height: 455px;
+    margin-bottom: 20px;
   }
 
   .post__information-wrapper {
@@ -136,6 +170,7 @@
 
   .post__item-panorama {
     width: 100%;
+    margin-bottom: 50px;
   }
 
   .post__image {
@@ -144,6 +179,15 @@
 
   .post__information {
     min-height: 155px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    box-sizing: border-box;
+    padding: 25px 25px;
+  }
+
+  .post__information--panorama{
+    padding: 25px 25px;
   }
 
   .post__item-small {
@@ -160,12 +204,77 @@
     flex-wrap: wrap;
     justify-content: space-around;
   }
+
+  .post__rate {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row-reverse;
+    align-items: center;
+    width: 100%;
+  }
+
+  .post__text {
+    font-size: 18px;
+    line-height: 30px;
+    margin: 0;
+  }
+
+  .post__end {
+    padding: 40px 0 70px 0;
+  }
+
+  .post__info {
+    width: 450px;
+    font-size: 18px;
+    line-height: 30px;
+    padding: 90px 0 78px 0;
+  }
+
+  .post__panorama {
+    width: 150px;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-around;
+    align-items: center;
+    position: absolute;
+    right: 30px;
+    margin: 0;
+  }
+
+  .post__panorama-image {
+    height: 510px;
+  }
 }
 
 @media (min-width: $desktop-width) {
+  .post__item {
+    margin-bottom: 50px;
+  }
+
   .post__information-wrapper {
     width: 78%;
     max-width: 940px;
+  }
+
+  .post__info {
+    width: 630px;
+    padding-bottom: 90px;
+  }
+
+  .post__info-wrapper {
+    padding: 0;
+    width: 700px;
+    margin: 0 auto;
+  }
+
+  .post__panorama-image {
+    max-height: 505px;
+    max-width: 1200px;
+  }
+
+  .post__information {
+    max-height: 155px;
+    box-sizing: border-box;
   }
 
   .post__item-small {
@@ -180,11 +289,30 @@
   .post__panorama {
     display: flex;
     flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: center;
     position: absolute;
-    right: 150px;
+    right: 200px;
+    width: 120px;
+  }
+
+  .post__heart {
+    margin: 0;
   }
 
   .post__panorama img {
     margin: 0 0 0 20px;
+  }
+
+  .post__rate {
+    margin-top: 10px;
+  }
+
+  .post__end {
+    padding: 0 0 70px 0;
+  }
+
+  .post-upload__photo {
+    margin: 15px 0;
   }
 }

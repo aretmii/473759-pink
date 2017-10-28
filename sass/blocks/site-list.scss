@@ -13,9 +13,12 @@
   color: #ffffff;
   display: inline-block;
   font-size: 18px;
+  line-height: 60px;
   text-transform: uppercase;
   background-color: transparent;
-  padding: 25px 0;
+  width: 100%;
+  border-top: 1px solid #485461;
+  padding-top: 1px;
 }
 
 .site-list a[href] {
@@ -50,6 +53,8 @@
     background-color: transparent;
     margin-top: 0;
     padding: 35px 0 25px 0;
+    width: auto;
+    border-top: none;
   }
 
   .site-list a[href] {

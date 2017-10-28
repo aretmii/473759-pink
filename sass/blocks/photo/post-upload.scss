@@ -129,7 +129,8 @@
   }
 
   .post-upload__wrapper {
-    padding: 55px 0;
+    padding: 0;
+    margin: 0;
     max-width: 300px;
   }
 
@@ -138,20 +139,36 @@
     flex-direction: row;
     flex-wrap: nowrap;
     width: auto;
+    margin-left: 20px;
   }
 
   .post-upload__option {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    width: 50px;
+    width: 27px;
   }
 
-  .post-upload__option label {
+  .post-upload__option label  {
     display: block;
     font-weight: normal;
     line-height: 21px;
     font-size: 14px;
+    width: 27px;
+  }
+
+  .post-upload__option label > svg {
+    width: 22px;
+    height: 22px;
+  }
+
+  .filter-option-label-last {
+      text-align: left;
+  }
+
+  .post-upload__option .filter-option-label-last svg {
+    width: 16px;
+    height: 16px;
   }
 
   .post-upload__range {
@@ -168,13 +185,17 @@
   .post-upload__inner {
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
     width: 93.9%;
+    max-width: 800px;
+    margin: 50px auto;
   }
 
   .post-upload__photo {
     min-width: 300px;
+    padding: 0;
+    margin-left: 10px;
   }
 
   .post-upload__post,
@@ -184,9 +205,14 @@
   }
 }
 
+  .post-upload__buttons {
+    padding-top: 80px;
+  }
+
 @media (min-width: $desktop-width) {
   .post-upload {
     width: 78.3%;
+    max-width: 940px;
     margin: 0 auto;
   }
 
@@ -197,9 +223,9 @@
   .post-upload__inner {
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
     align-items: center;
-    width: 78.3%;
+    width: 100%;
+    max-width: 800px;
   }
 
   .post-upload__fieldset {
@@ -210,7 +236,7 @@
   }
 
   .post-upload__option {
-    margin-left: 25px;
+    justify-content: space-between;
   }
 
   .post-upload__range {
@@ -220,7 +246,7 @@
   }
 
   .post-upload__range input {
-    margin: 27px 20px;
+    margin: 27px 0 27px 20px;
   }
 
   .post-upload__buttons {
@@ -229,7 +255,7 @@
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    padding: 120px 0 0 0;
+    padding: 185px 0 0 0;
     margin: 0;
   }
 
@@ -238,5 +264,19 @@
     width: 180px;
     padding: 18px 0;
     box-sizing: border-box;
+  }
+
+  .post-upload__option label > svg {
+    width: 44px;
+    height: 44px;
+  }
+
+  .filter-option-label-last {
+      text-align: left;
+  }
+
+  .post-upload__option .filter-option-label-last svg {
+    width: 32px;
+    height: 32px;
   }
 }

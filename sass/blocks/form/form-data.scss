@@ -176,7 +176,8 @@
 }
 
 .form-data__emotions-wrapper textarea {
-  width: 99%;
+  width: auto;
+  resize: none;
 }
 
 .form-data__legend-emotions {

@@ -70,6 +70,7 @@
 
 .main-nav--opened {
   min-height: 69px;
+  max-height: 490px;
   background-color: transparent;
   z-index: 0;
   display: block;
@@ -132,7 +133,6 @@
   }
 
   .main-nav--opened .site-list__item {
-    border-top: 1px solid #485461;
     border-bottom: 1px solid #000001;
   }
 
@@ -185,6 +185,7 @@
 
   .main-nav--opened {
     min-height: 109px;
+    max-height: 695px;
     background-color: transparent;
     z-index: 0;
     display: block;
