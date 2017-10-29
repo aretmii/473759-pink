@@ -44,8 +44,17 @@
   color: #283645;
   border: 2px solid #e5e5e5;
   min-height: 58px;
-  padding: 0;
+  padding: 0 0 0 5px;
   width: 100%;
+  outline: none;
+}
+
+.form-data__names:hover {
+  border: 2px solid #283645;
+}
+
+.form-data__names:focus {
+  border: 2px solid #d22856;
 }
 
 .form-data__filter {
@@ -109,6 +118,7 @@
 .form-data__mail {
   border: 2px solid #e5e5e5;
   height: 59px;
+  padding: 0 0 0 20px;
 }
 
 .form-data__label-mail,
@@ -151,7 +161,8 @@
 }
 
 .form-data__emotions-wrapper textarea {
-  width: 99%;
+  width: 100%;
+  resize: none;
 }
 
 .form-data__legend-emotions {
@@ -166,13 +177,27 @@
   border: none;
   font-size: 18px;
   font-weight: bold;
-  color: #ffffff;
+  color: rgba(255, 255, 255, 1);
   padding: 20px 48px 24px 48px;
   text-transform: uppercase;
   width: 87.5%;
   height: 60px;
   vertical-align: middle;
   border-radius: 2px;
+}
+
+.form-data__submit:hover {
+  background-color: #1c9b5e;
+}
+
+.form-data__submit:active {
+  background-color: #1c9b5e;
+  color: rgba(255, 255, 255, 0.3);
+}
+
+.form-data__submit:disabled {
+  background-color: #e5e5e5;
+  color: rgba(255, 255, 255, 0.3);
 }
 
 .form-data__star {
@@ -223,7 +248,7 @@
 
   .form-data__names {
     min-height: 58px;
-    padding: 0;
+    padding: 0 0 0 5px;
     width: 100%;
   }
 
@@ -310,6 +335,7 @@
   .form-data__phone,
   .form-data__mail {
     height: 59px;
+    padding: 0 0 0 20px;
   }
 
   .form-data__label-mail,
@@ -397,7 +423,7 @@
 
   .form-data__names {
     min-height: 58px;
-    padding: 0;
+    padding: 0 0 0 20px;
     width: 100%;
   }
 
@@ -435,6 +461,7 @@
     margin-top: 30px;
     margin-bottom: 40px;
     display: flex;
+    flex-direction: row;
     justify-content: space-between;
     flex-wrap: wrap;
   }
@@ -464,6 +491,7 @@
   .form-data__phone,
   .form-data__mail {
     height: 59px;
+    padding: 0 0 0 15px;
   }
 
   .form-data__label-mail,

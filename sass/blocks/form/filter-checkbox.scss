@@ -38,6 +38,14 @@
   background: #ffffff;
 }
 
+.filter-checkbox:hover + label::before {
+  border: 2px solid #283645;
+}
+
+.filter-checkbox:active + label::before {
+  border: 2px solid #d22856;
+}
+
 .filter-checkbox + label::after {
   content: " ";
   position: absolute;

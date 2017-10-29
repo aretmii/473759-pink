@@ -30,6 +30,14 @@
   background: #ffffff;
 }
 
+.filter-radio:hover + label::before {
+  border: 2px solid #354250;
+}
+
+.filter-radio:active + label::before {
+  border: 2px solid #d22856;
+}
+
 .filter-radio + label::after {
   content: " ";
   position: absolute;
@@ -40,6 +48,10 @@
   border-radius: 50%;
   background: #d22856;
   opacity: 0;
+}
+
+.filter-radio:active + label::after {
+  background: transparent;
 }
 
 .filter-radio:checked + label::after {

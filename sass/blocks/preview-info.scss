@@ -18,14 +18,25 @@
 }
 
 @media (min-width: $tablet-width) {
-  .preview-info__text {
+  .preview-info {
+    padding: 60px 0 55px 0;
+  }
+
+  .preview-info__quest {
+    margin: 0;
     font-size: 40px;
+    line-height: 45px;
+  }
+
+  .preview-info__answ {
+    margin: 0;
+    font-size: 40px;
+    line-height: 45px;
   }
 }
 
 @media (min-width: $desktop-width) {
   .preview-info {
-    min-height: 312px;
     display: flex;
     flex-direction: column;
     justify-content: center;
