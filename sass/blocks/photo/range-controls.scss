@@ -1,0 +1,163 @@
+.range-controls__hidden {
+  display: none;
+}
+
+.range-controls__wrapper {
+  border-bottom: 1px solid #dddfe0;
+  width: 240px;
+  margin-left: -50px;
+}
+
+.range-filter {
+  width: 200px;
+  margin: 50px auto;
+}
+
+.range-controls {
+  position: relative;
+  height: 21px;
+  padding-top: 39px;
+  border-radius: 5px;
+}
+
+.range-controls .scale {
+  height: 2px;
+  background: #283645;
+  width: 100%;
+}
+
+.range-controls .toggle {
+  position: absolute;
+  top: 33px;
+  left: 0;
+  width: 9px;
+  height: 9px;
+  cursor: pointer;
+  border: 2px solid #d32e5b;
+  border-radius: 50%;
+  background: #f2f2f2;
+}
+
+.range-controls .toggle-max {
+  left: 145px;
+}
+
+.range-controls .toggle:active {
+  background: #d22856;
+}
+
+.price-controls {
+  font-size: 0;
+}
+
+@media (min-width: $tablet-width) {
+  .range-controls__hidden {
+    display: block;
+  }
+
+  .range-controls__wrapper {
+    border-bottom: 1px solid #dddfe0;
+    width: 290px;
+    margin-left: -50px;
+  }
+
+  .upload-range {
+    margin-left: 20px;
+  }
+
+  .range-filter {
+    width: 200px;
+    margin: 50px auto;
+  }
+
+  .range-controls {
+    position: relative;
+    height: 21px;
+    padding-top: 39px;
+    border-radius: 5px;
+  }
+
+  .range-controls .scale {
+    height: 2px;
+    background: #283645;
+    width: 100%;
+  }
+
+  .range-controls .toggle {
+    position: absolute;
+    top: 33px;
+    left: 0;
+    width: 9px;
+    height: 9px;
+    cursor: pointer;
+    border: 2px solid #d32e5b;
+    border-radius: 50%;
+    background: #f2f2f2;
+  }
+
+  .range-controls .toggle-min {
+    left: 20px;
+  }
+
+  .range-controls .toggle-max {
+    left: 145px;
+  }
+
+  .price-controls {
+    font-size: 0;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .range-controls__wrapper {
+    border-bottom: 1px solid #dddfe0;
+    width: 410px;
+    margin-left: -80px;
+  }
+
+  .upload-range {
+    margin-left: 40px;
+  }
+
+  .range-filter {
+    width: 290px;
+    margin: 50px auto;
+  }
+
+  .range-controls {
+    position: relative;
+    height: 21px;
+    padding-top: 39px;
+    border-radius: 5px;
+  }
+
+  .range-controls .scale {
+    height: 2px;
+    background: #283645;
+    width: 100%;
+  }
+
+  .range-controls .toggle {
+    position: absolute;
+    top: 33px;
+    left: 0;
+    width: 9px;
+    height: 9px;
+    cursor: pointer;
+    border: 2px solid #d32e5b;
+    border-radius: 50%;
+    background: #f2f2f2;
+  }
+
+  .range-controls .toggle-min {
+    left: 20px;
+  }
+
+  .range-controls .toggle-max {
+    left: 145px;
+  }
+
+  .price-controls {
+    font-size: 0;
+  }
+}

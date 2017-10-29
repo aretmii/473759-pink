@@ -45,6 +45,10 @@
   display: none;
 }
 
+.main-footer__mobile-hidden {
+  display: none;
+}
+
 @media (min-width: $tablet-width) {
   .main-footer {
     display: flex;
