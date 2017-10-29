@@ -28,7 +28,7 @@ gulp.task("style", function() {
 });
 
 gulp.task("html", function () {
-   return gulp.src("*.html")
+    return gulp.src("*.html")
     //.pipe(posthtml([
     //  include()
   //  ]))
@@ -80,5 +80,5 @@ gulp.task("copy", function () {
 });
 
 gulp.task("clean", function () {
- return del("build");
+  return del("build");
 });

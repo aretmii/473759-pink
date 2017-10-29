@@ -2,23 +2,65 @@
   display: none;
 }
 
-.upload-range input[type="range"] {
-  -webkit-appearance: none;
+.upload-range__wrapper {
+  border-bottom: 1px solid #dddfe0;
   width: 240px;
-  border-radius: 8px;
-  height: 2px;
-  background-color: #283645;
+  margin-left: -50px;
 }
 
-.upload-range input[type="range"]::-webkit-slider-thumb {
-  -webkit-appearance: none;
-  background-color: #f2f2f2;
-  border: 2px solid #d22856;
-  width: 14px;
-  height: 14px;
-  border-radius: 50%;
-  box-sizing: border-box;
+.range-filter {
+  width: 200px;
+  margin: 50px auto;
+}
+
+.range-controls {
+  position: relative;
+  height: 21px;
+  padding-top: 39px;
+  border-radius: 5px;
+}
+
+.range-controls .scale {
+  height: 2px;
+  background: #283645;
+  width: 100%;
+}
+
+.range-controls .toggle {
+  position: absolute;
+  top: 33px;
+  left: 0px;
+  width: 9px;
+  height: 9px;
   cursor: pointer;
+  border: 2px solid #d32e5b;
+  border-radius: 50%;
+  background: #f2f2f2;
+}
+
+.range-controls .toggle-max {
+  left: 145px;
+}
+
+.range-controls .toggle:active {
+  background: #d22856;
+}
+
+.price-controls {
+  font-size: 0;
+}
+
+.price-controls label {
+  font-size: 16px;
+  display: inline-block;
+  width: 50%;
+}
+
+.price-controls input {
+  font-family: 'Roboto', 'Arial', sans-serif;
+  font-size: 16px;
+  text-align: center;
+  color: #283136;
 }
 
 @media (min-width: $tablet-width) {
@@ -28,27 +70,67 @@
 
   .upload-range__wrapper {
     border-bottom: 1px solid #dddfe0;
-    width: 300px;
+    width: 290px;
     margin-left: -50px;
   }
 
-  .upload-range input[type="range"] {
-    -webkit-appearance: none;
-    width: 200px;
-    border-radius: 8px;
-    height: 2px;
-    background-color: #283645;
+  .upload-range {
+    margin-left: 20px;
   }
 
-  .upload-range input[type="range"]::-webkit-slider-thumb {
-    -webkit-appearance: none;
-    background-color: #f2f2f2;
-    border: 2px solid #d22856;
-    width: 14px;
-    height: 14px;
-    border-radius: 50%;
-    box-sizing: border-box;
+  .range-filter {
+    width: 200px;
+    margin: 50px auto;
+}
+
+  .range-controls {
+    position: relative;
+    height: 21px;
+    padding-top: 39px;
+    border-radius: 5px;
+  }
+
+  .range-controls .scale {
+    height: 2px;
+    background: #283645;
+    width: 100%;
+  }
+
+  .range-controls .toggle {
+    position: absolute;
+    top: 33px;
+    left: 0px;
+    width: 9px;
+    height: 9px;
     cursor: pointer;
+    border: 2px solid #d32e5b;
+    border-radius: 50%;
+    background: #f2f2f2;
+  }
+
+  .range-controls .toggle-min {
+    left: 20px;
+  }
+
+  .range-controls .toggle-max {
+    left: 145px;
+  }
+
+  .price-controls {
+    font-size: 0;
+  }
+
+  .price-controls label {
+    font-size: 16px;
+    display: inline-block;
+    width: 50%;
+  }
+
+  .price-controls input {
+    font-family: 'Roboto', 'Arial', sans-serif;
+    font-size: 16px;
+    text-align: center;
+    color: #283136;
   }
 }
 
@@ -59,22 +141,62 @@
     margin-left: -80px;
   }
 
-  .upload-range input[type="range"] {
-    -webkit-appearance: none;
-    width: 290px;
-    border-radius: 8px;
-    height: 2px;
-    background-color: #283645;
+  .upload-range {
+    margin-left: 40px;
   }
 
-  .upload-range input[type="range"]::-webkit-slider-thumb {
-    -webkit-appearance: none;
-    background-color: #f2f2f2;
-    border: 2px solid #d22856;
-    width: 14px;
-    height: 14px;
-    border-radius: 50%;
-    box-sizing: border-box;
+  .range-filter {
+    width: 290px;
+    margin: 50px auto;
+}
+
+  .range-controls {
+    position: relative;
+    height: 21px;
+    padding-top: 39px;
+    border-radius: 5px;
+  }
+
+  .range-controls .scale {
+    height: 2px;
+    background: #283645;
+    width: 100%;
+  }
+
+  .range-controls .toggle {
+    position: absolute;
+    top: 33px;
+    left: 0px;
+    width: 9px;
+    height: 9px;
     cursor: pointer;
+    border: 2px solid #d32e5b;
+    border-radius: 50%;
+    background: #f2f2f2;
+  }
+
+  .range-controls .toggle-min {
+    left: 20px;
+  }
+
+  .range-controls .toggle-max {
+    left: 145px;
+  }
+
+  .price-controls {
+    font-size: 0;
+  }
+
+  .price-controls label {
+    font-size: 16px;
+    display: inline-block;
+    width: 50%;
+  }
+
+  .price-controls input {
+    font-family: 'Roboto', 'Arial', sans-serif;
+    font-size: 16px;
+    text-align: center;
+    color: #283136;
   }
 }
