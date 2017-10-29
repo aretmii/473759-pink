@@ -161,7 +161,7 @@
 }
 
 .form-data__emotions-wrapper textarea {
-  width: auto;
+  width: 100%;
   resize: none;
 }
 
@@ -491,7 +491,7 @@
   .form-data__phone,
   .form-data__mail {
     height: 59px;
-    padding: 0 0 0 20px;
+    padding: 0 0 0 15px;
   }
 
   .form-data__label-mail,
