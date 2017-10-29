@@ -1,8 +1,8 @@
-.upload-range__hidden {
+.range-controls__hidden {
   display: none;
 }
 
-.upload-range__wrapper {
+.range-controls__wrapper {
   border-bottom: 1px solid #dddfe0;
   width: 240px;
   margin-left: -50px;
@@ -29,7 +29,7 @@
 .range-controls .toggle {
   position: absolute;
   top: 33px;
-  left: 0px;
+  left: 0;
   width: 9px;
   height: 9px;
   cursor: pointer;
@@ -50,25 +50,12 @@
   font-size: 0;
 }
 
-.price-controls label {
-  font-size: 16px;
-  display: inline-block;
-  width: 50%;
-}
-
-.price-controls input {
-  font-family: 'Roboto', 'Arial', sans-serif;
-  font-size: 16px;
-  text-align: center;
-  color: #283136;
-}
-
 @media (min-width: $tablet-width) {
-  .upload-range__hidden {
+  .range-controls__hidden {
     display: block;
   }
 
-  .upload-range__wrapper {
+  .range-controls__wrapper {
     border-bottom: 1px solid #dddfe0;
     width: 290px;
     margin-left: -50px;
@@ -81,7 +68,7 @@
   .range-filter {
     width: 200px;
     margin: 50px auto;
-}
+  }
 
   .range-controls {
     position: relative;
@@ -99,7 +86,7 @@
   .range-controls .toggle {
     position: absolute;
     top: 33px;
-    left: 0px;
+    left: 0;
     width: 9px;
     height: 9px;
     cursor: pointer;
@@ -119,23 +106,10 @@
   .price-controls {
     font-size: 0;
   }
-
-  .price-controls label {
-    font-size: 16px;
-    display: inline-block;
-    width: 50%;
-  }
-
-  .price-controls input {
-    font-family: 'Roboto', 'Arial', sans-serif;
-    font-size: 16px;
-    text-align: center;
-    color: #283136;
-  }
 }
 
 @media (min-width: $desktop-width) {
-  .upload-range__wrapper {
+  .range-controls__wrapper {
     border-bottom: 1px solid #dddfe0;
     width: 410px;
     margin-left: -80px;
@@ -148,7 +122,7 @@
   .range-filter {
     width: 290px;
     margin: 50px auto;
-}
+  }
 
   .range-controls {
     position: relative;
@@ -166,7 +140,7 @@
   .range-controls .toggle {
     position: absolute;
     top: 33px;
-    left: 0px;
+    left: 0;
     width: 9px;
     height: 9px;
     cursor: pointer;
@@ -185,18 +159,5 @@
 
   .price-controls {
     font-size: 0;
-  }
-
-  .price-controls label {
-    font-size: 16px;
-    display: inline-block;
-    width: 50%;
-  }
-
-  .price-controls input {
-    font-family: 'Roboto', 'Arial', sans-serif;
-    font-size: 16px;
-    text-align: center;
-    color: #283136;
   }
 }
