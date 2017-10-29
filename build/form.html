@@ -65,10 +65,10 @@
                   <a href="index.html">Главная</a>
                 </li>
                 <li class="site-list__item">
-                  <a class="site-list__active" href="photo.html">Фотографии</a>
+                  <a href="photo.html">Фотографии</a>
                 </li>
                 <li class="site-list__item">
-                  <a href="form.html">Конкурс</a>
+                  <a class="site-list__active" href="form.html">Конкурс</a>
                 </li>
                 <li class="site-list__item">
                   <a href="https://htmlacademy.ru/"><span class="site-list__item-upper">Html</span> Academy</a>
@@ -78,249 +78,94 @@
           </nav>
         </div>
       </div>
-      <section class="preview__photo">
-        <div class="photo-preview">
-          <p class="photo-preview__item">Фотографии пользователей</p>
+      <section class="preview">
+        <h2 class="visually-hidden">Превью</h2>
+        <div class="form-preview__wrapper">
+          <p class="form-preview__item">Конкурс на самое безбашенное путешествие с Пинк</p>
         </div>
       </section>
     </header>
     <main class="page-main">
-      <h1 class="visually-hidden">Приложение Pink</h1>
-      <section class="post">
-        <h2 class="visually-hidden">Посты</h2>
-        <div class="post__info-wrapper">
-            <p class="post__info post__info--top">
-              Взгляните на фотографии, которые выкладывают пользователи!
-              Видите, как не хватает ваших?
-            </p>
-        </div>
-        <div class="post__wrapper">
-          <ul class="post__list">
-            <li class="post__item-panorama">
-              <picture class="post__panorama-image">
-                <source media="(min-width: 1200px)" srcset="img/panorama-desktop@1x.jpg 1x, img/panorama-desktop@2x.jpg 2x">
-                <source media="(min-width: 660px)" srcset="img/panorama-tablet@1x.jpg 1x, img/panorama-tablet@2x.jpg 2x">
-                <img class="post__panorama-image" src="img/panorama-mobile@1x.jpg" srcset="img/panorama-mobile@2x.jpg 2x" alt="панорама">
-              </picture>
-              <div class="post__information-wrapper">
-                <div class="post__information--panorama">
-                  <p class="post__nickname">Анна<span class="post__time">(5 минут назад)</span></p>
-                  <blockquote class="post__comment">Прыгать или нет? Напишите в коментарии свой совет и смотрите прямую трансляцию в перископе, задавайте свои вопросы!</blockquote>
-                  <div class="post__panorama">
-                    <svg  class="post__heart" version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="12.545px" height="11.99px" viewBox="521.939 473.064 12.545 11.99" enable-background="new 521.939 473.064 12.545 11.99" xml:space="preserve">
-                      <g>
-                        <path d="M528.174,485.055c-0.212,0-0.412-0.091-0.552-0.249c-3.798-4.324-4.644-5.298-4.858-5.572l-0.004,0.0 c-0.529-0.675-0.821-1.518-0.821-2.373c0-2.095,1.704-3.799,3.799-3.799c0.934,0,1.804,0.32,2.484,0.898 c0.696-0.578,1.56-0.898,2.463-0.898c2.095,0,3.799,1.704,3.799,3.799c0,0.909-0.318,1.754-0.896,2.381l-4.86,5.561 C528.587,484.964,528.386,485.055,528.174,485.055L528.174,485.055z M523.929,478.349c0.208,0.255,2.471,2.839,4.243,4.858 l4.323-4.944c0.34-0.369,0.52-0.86,0.52-1.399c0-1.285-1.045-2.331-2.33-2.331c-0.729,0-1.421,0.344-1.9,0.943 c-0.142,0.178-0.353,0.267-0.585,0.275c-0.227-0.003-0.439-0.111-0.575-0.294c-0.441-0.587-1.129-0.925-1.887-0.925 c-1.285,0-2.33,1.046-2.33,2.331c0,0.678,0.275,1.171,0.507,1.467C523.919,478.336,523.925,478.342,523.929,478.349z"/>
-                      </g>
-                    </svg>
-                    <p class="post__heart-count">Нравится: 215</p>
-                  </div>
+      <h1 class="visually-hidden">Приложение Pink форма истории</h1>
+      <section class="form">
+        <div class="form__wrapper">
+          <h2 class="visually-hidden">Форма</h2>
+          <div class="form-preview__wrapper-info">
+              <p class="form__info">Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту! Пожалуйста, заполните форму ниже:</p>
+          </div>
+          <form class="form-data" action="https://echo.htmlacademy.ru" method="get">
+            <fieldset class="form-data__full-name">
+              <label class="form-data__label-names">
+                <span class="form-data__title">Фамилия:</span>
+                <input class="form-data__names" type="text" id="surName" placeholder="Укажите фамилию*">
+              </label>
+              <label class="form-data__label-names" >
+                <span class="form-data__title">Имя:</span>
+                <input class="form-data__names" type="text" id="firstName" placeholder="Введите ваше имя*">
+              </label>
+              <label class="form-data__label-names" >
+                <span class="form-data__title">Отчество:</span>
+                <input class="form-data__names" type="text" id="middleName" placeholder="Ну и отчество тоже*">
+              </label>
+            </fieldset>
+            <fieldset class="form-data__filter">
+              <legend class="form-data__legend-filters">Ваши безбашенные достижения в путешествии</legend>
+              <div class="form-data__filter-wrapper">
+                <div class="filter-checkbox__wrapper">
+                  <input class="filter-checkbox" type="checkbox" value="1" id="shark" name="add[]" checked>
+                  <label class="filter-checkbox-label" for="shark">Сделал селфи с акулой</label>
+                  <input class="filter-checkbox" type="checkbox" value="1" id="beach" name="add[]" checked>
+                  <label class="filter-checkbox-label" for="beach">Обгорел на пляже</label>
+                </div>
+                <div class="filter-checkbox__wrapper">
+                  <input class="filter-checkbox" type="checkbox" value="1" id="chack" name="add[]">
+                  <label class="filter-checkbox-label" for="chack">Видел Чака Норриса</label>
+                  <input class="filter-checkbox" type="checkbox" value="1" id="souvenir" name="add[]">
+                  <label class="filter-checkbox-label" for="souvenir">Накупил сувениров</label>
+                </div>
+                <div class="filter-checkbox__wrapper">
+                  <input class="filter-checkbox" type="checkbox" value="1" id="tower" name="add[]" checked>
+                  <label class="filter-checkbox-label" for="tower">Удержал башню</label>
+                  <input class="filter-checkbox" type="checkbox" value="1" id="hotel" name="add[]">
+                  <label class="filter-checkbox-label" for="hotel">Разгромил отель</label>
                 </div>
               </div>
-            </li>
-            <li class="post__item-small">
-              <ul class="post__list-small">
-                <li class="post__item">
-                  <picture>
-                    <source media="(min-width: 1200px)" srcset="img/photo-car-desktop@1x.jpg 1x, img/photo-car-desktop@2x.jpg 2x">
-                    <source media="(min-width: 660px)" srcset="img/photo-car-tablet@1x.jpg 1x, img/photo-car-tablet@2x.jpg 2x">
-                    <img class="post__image" src="img/photo-car-mobile@1x.jpg" srcset="img/photo-car-mobile@2x.jpg 2x" alt="Автомобиль">
-                  </picture>
-                  <div class="post__information">
-                    <div>
-                      <p class="post__nickname">Левон<span class="post__time">(5 часов назад)</span></p>
-                      <p class="post__comment">Вчера он на луну летал, сегодня в руки к нам попал.</p>
-                    </div>
-                    <div class="post__rate">
-                      <svg  class="post__heart" version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="12.545px" height="11.99px" viewBox="521.939 473.064 12.545 11.99" enable-background="new 521.939 473.064 12.545 11.99" xml:space="preserve">
-                        <g>
-                          <path d="M528.174,485.055c-0.212,0-0.412-0.091-0.552-0.249c-3.798-4.324-4.644-5.298-4.858-5.572l-0.004,0.0 c-0.529-0.675-0.821-1.518-0.821-2.373c0-2.095,1.704-3.799,3.799-3.799c0.934,0,1.804,0.32,2.484,0.898 c0.696-0.578,1.56-0.898,2.463-0.898c2.095,0,3.799,1.704,3.799,3.799c0,0.909-0.318,1.754-0.896,2.381l-4.86,5.561 C528.587,484.964,528.386,485.055,528.174,485.055L528.174,485.055z M523.929,478.349c0.208,0.255,2.471,2.839,4.243,4.858 l4.323-4.944c0.34-0.369,0.52-0.86,0.52-1.399c0-1.285-1.045-2.331-2.33-2.331c-0.729,0-1.421,0.344-1.9,0.943 c-0.142,0.178-0.353,0.267-0.585,0.275c-0.227-0.003-0.439-0.111-0.575-0.294c-0.441-0.587-1.129-0.925-1.887-0.925 c-1.285,0-2.33,1.046-2.33,2.331c0,0.678,0.275,1.171,0.507,1.467C523.919,478.336,523.925,478.342,523.929,478.349z"/>
-                        </g>
-                      </svg>
-                      <p class="post__heart-count">Нравится: 356</p>
-                    </div>
-                  </div>
-                </li>
-                <li class="post__item">
-                  <picture>
-                    <source media="(min-width: 1200px)" srcset="img/photo-drumset-desktop@1x.jpg 1x, img/photo-drumset-desktop@1x.jpg 2x">
-                    <source media="(min-width: 660px)" srcset="img/photo-drumset-tablet@1x.jpg 1x, img/photo-drumset-tablet@2x.jpg 2x">
-                    <img class="post__image" src="img/photo-drumset-mobile@1x.jpg" srcset="img/photo-drumset-mobile@2x.jpg 2x" alt="Барабаны">
-                  </picture>
-                  <div class="post__information">
-                    <div>
-                      <p class="post__nickname">Антон<span class="post__time">(12 часов назад)</span></p>
-                      <p class="post__comment">Соседи будут рады!</p>
-                    </div>
-                    <div class="post__rate">
-                      <svg  class="post__heart" version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="12.545px" height="11.99px" viewBox="521.939 473.064 12.545 11.99" enable-background="new 521.939 473.064 12.545 11.99" xml:space="preserve">
-                        <g>
-                          <path d="M528.174,485.055c-0.212,0-0.412-0.091-0.552-0.249c-3.798-4.324-4.644-5.298-4.858-5.572l-0.004,0.0 c-0.529-0.675-0.821-1.518-0.821-2.373c0-2.095,1.704-3.799,3.799-3.799c0.934,0,1.804,0.32,2.484,0.898 c0.696-0.578,1.56-0.898,2.463-0.898c2.095,0,3.799,1.704,3.799,3.799c0,0.909-0.318,1.754-0.896,2.381l-4.86,5.561 C528.587,484.964,528.386,485.055,528.174,485.055L528.174,485.055z M523.929,478.349c0.208,0.255,2.471,2.839,4.243,4.858 l4.323-4.944c0.34-0.369,0.52-0.86,0.52-1.399c0-1.285-1.045-2.331-2.33-2.331c-0.729,0-1.421,0.344-1.9,0.943 c-0.142,0.178-0.353,0.267-0.585,0.275c-0.227-0.003-0.439-0.111-0.575-0.294c-0.441-0.587-1.129-0.925-1.887-0.925 c-1.285,0-2.33,1.046-2.33,2.331c0,0.678,0.275,1.171,0.507,1.467C523.919,478.336,523.925,478.342,523.929,478.349z"/>
-                        </g>
-                      </svg>
-                      <p class="post__heart-count">Нравится: 666</p>
-                    </div>
-                  </div>
-                </li>
-                <li class="post__item">
-                  <picture>
-                    <source media="(min-width: 1200px)" srcset="img/photo-window-desktop@1x.jpg 1x, img/photo-window-desktop@2x.jpg 2x">
-                    <source media="(min-width: 660px)" srcset="img/photo-window-tablet@1x.jpg 1x, img/photo-window-tablet@2x.jpg 2x">
-                    <img class="post__image" src="img/photo-window-mobile@1x.jpg" srcset="img/photo-window-mobile@2x.jpg 2x" alt="Окна">
-                  </picture>
-                  <div class="post__information">
-                    <div>
-                      <p class="post__nickname">Борис<span class="post__time">(20 часов назад)</span></p>
-                      <p class="post__comment">Здесь могла быть ваша цитата о высоком и вечном.</p>
-                    </div>
-                    <div class="post__rate">
-                      <svg  class="post__heart" version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="12.545px" height="11.99px" viewBox="521.939 473.064 12.545 11.99" enable-background="new 521.939 473.064 12.545 11.99" xml:space="preserve">
-                        <g>
-                          <path d="M528.174,485.055c-0.212,0-0.412-0.091-0.552-0.249c-3.798-4.324-4.644-5.298-4.858-5.572l-0.004,0.0 c-0.529-0.675-0.821-1.518-0.821-2.373c0-2.095,1.704-3.799,3.799-3.799c0.934,0,1.804,0.32,2.484,0.898 c0.696-0.578,1.56-0.898,2.463-0.898c2.095,0,3.799,1.704,3.799,3.799c0,0.909-0.318,1.754-0.896,2.381l-4.86,5.561 C528.587,484.964,528.386,485.055,528.174,485.055L528.174,485.055z M523.929,478.349c0.208,0.255,2.471,2.839,4.243,4.858 l4.323-4.944c0.34-0.369,0.52-0.86,0.52-1.399c0-1.285-1.045-2.331-2.33-2.331c-0.729,0-1.421,0.344-1.9,0.943 c-0.142,0.178-0.353,0.267-0.585,0.275c-0.227-0.003-0.439-0.111-0.575-0.294c-0.441-0.587-1.129-0.925-1.887-0.925 c-1.285,0-2.33,1.046-2.33,2.331c0,0.678,0.275,1.171,0.507,1.467C523.919,478.336,523.925,478.342,523.929,478.349z"/>
-                        </g>
-                      </svg>
-                      <p class="post__heart-count">Нравится: 215</p>
-                    </div>
-                  </div>
-                </li>
-                <li class="post__item">
-                  <picture>
-                    <source media="(min-width: 1200px)" srcset="img/photo-fair-desktop@1x.jpg 1x, img/photo-fair-desktop@2x.jpg 2x">
-                    <source media="(min-width: 660px)" srcset="img/photo-fair-tablet@1x.jpg 1x, img/photo-fair-tablet@2x.jpg 2x">
-                    <img class="post__image" src="img/photo-fair-mobile@1x.jpg" srcset="img/photo-fair-mobile@2x.jpg 2x" alt="Ярмарка">
-                  </picture>
-                  <div class="post__information">
-                    <div>
-                      <p class="post__nickname">Сергей<span class="post__time">(25 часов назад)</span></p>
-                      <p class="post__comment">Самая кубанская в мире!</p>
-                    </div>
-                    <div class="post__rate">
-                      <svg  class="post__heart" version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="12.545px" height="11.99px" viewBox="521.939 473.064 12.545 11.99" enable-background="new 521.939 473.064 12.545 11.99" xml:space="preserve">
-                        <g>
-                          <path d="M528.174,485.055c-0.212,0-0.412-0.091-0.552-0.249c-3.798-4.324-4.644-5.298-4.858-5.572l-0.004,0.0 c-0.529-0.675-0.821-1.518-0.821-2.373c0-2.095,1.704-3.799,3.799-3.799c0.934,0,1.804,0.32,2.484,0.898 c0.696-0.578,1.56-0.898,2.463-0.898c2.095,0,3.799,1.704,3.799,3.799c0,0.909-0.318,1.754-0.896,2.381l-4.86,5.561 C528.587,484.964,528.386,485.055,528.174,485.055L528.174,485.055z M523.929,478.349c0.208,0.255,2.471,2.839,4.243,4.858 l4.323-4.944c0.34-0.369,0.52-0.86,0.52-1.399c0-1.285-1.045-2.331-2.33-2.331c-0.729,0-1.421,0.344-1.9,0.943 c-0.142,0.178-0.353,0.267-0.585,0.275c-0.227-0.003-0.439-0.111-0.575-0.294c-0.441-0.587-1.129-0.925-1.887-0.925 c-1.285,0-2.33,1.046-2.33,2.331c0,0.678,0.275,1.171,0.507,1.467C523.919,478.336,523.925,478.342,523.929,478.349z"/>
-                        </g>
-                      </svg>
-                      <p class="post__heart-count">Нравится: 4</p>
-                    </div>
-                  </div>
-                </li>
-                <li class="post__item">
-                  <picture>
-                    <source media="(min-width: 1200px)" srcset="img/photo-pov-desktop@1x.jpg 1x, img/photo-pov-desktop@2x.jpg 2x">
-                    <source media="(min-width: 660px)" srcset="img/photo-pov-tablet@1x.jpg 1x, img/photo-pov-tablet@2x.jpg 2x">
-                    <img class="post__image" src="img/photo-pov-mobile@1x.jpg" srcset="img/photo-pov-mobile@2x.jpg 2x" alt="Поход">
-                  </picture>
-                  <div class="post__information">
-                    <div>
-                      <p class="post__nickname">Максим<span class="post__time">(40 часов назад)</span></p>
-                      <p class="post__comment">Где снег-то?</p>
-                    </div>
-                    <div class="post__rate">
-                      <svg  class="post__heart" version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="12.545px" height="11.99px" viewBox="521.939 473.064 12.545 11.99" enable-background="new 521.939 473.064 12.545 11.99" xml:space="preserve">
-                        <g>
-                          <path d="M528.174,485.055c-0.212,0-0.412-0.091-0.552-0.249c-3.798-4.324-4.644-5.298-4.858-5.572l-0.004,0.0 c-0.529-0.675-0.821-1.518-0.821-2.373c0-2.095,1.704-3.799,3.799-3.799c0.934,0,1.804,0.32,2.484,0.898 c0.696-0.578,1.56-0.898,2.463-0.898c2.095,0,3.799,1.704,3.799,3.799c0,0.909-0.318,1.754-0.896,2.381l-4.86,5.561 C528.587,484.964,528.386,485.055,528.174,485.055L528.174,485.055z M523.929,478.349c0.208,0.255,2.471,2.839,4.243,4.858 l4.323-4.944c0.34-0.369,0.52-0.86,0.52-1.399c0-1.285-1.045-2.331-2.33-2.331c-0.729,0-1.421,0.344-1.9,0.943 c-0.142,0.178-0.353,0.267-0.585,0.275c-0.227-0.003-0.439-0.111-0.575-0.294c-0.441-0.587-1.129-0.925-1.887-0.925 c-1.285,0-2.33,1.046-2.33,2.331c0,0.678,0.275,1.171,0.507,1.467C523.919,478.336,523.925,478.342,523.929,478.349z"/>
-                        </g>
-                      </svg>
-                      <p class="post__heart-count">Нравится: 150</p>
-                    </div>
-                  </div>
-                </li>
-                <li class="post__item">
-                  <picture>
-                    <source media="(min-width: 1200px)" srcset="img/photo-wing-desktop@1x.jpg 1x, img/photo-wing-desktop@2x.jpg 2x">
-                    <source media="(min-width: 660px)" srcset="img/photo-wing-tablet@1x.jpg 1x, img/photo-wing-tablet@2x.jpg 2x">
-                    <img class="post__image" src="img/photo-wing-mobile@1x.jpg" srcset="img/photo-wing-mobile@2x.jpg 2x" alt="Поход">
-                  </picture>
-                  <div class="post__information">
-                    <div>
-                      <p class="post__nickname">Надежда<span class="post__time">(45 часов назад)</span></p>
-                      <p class="post__comment">Всем GM и взаимные лайки!</p>
-                    </div>
-                    <div class="post__rate">
-                      <svg  class="post__heart" version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="12.545px" height="11.99px" viewBox="521.939 473.064 12.545 11.99" enable-background="new 521.939 473.064 12.545 11.99" xml:space="preserve">
-                        <g>
-                          <path d="M528.174,485.055c-0.212,0-0.412-0.091-0.552-0.249c-3.798-4.324-4.644-5.298-4.858-5.572l-0.004,0.0 c-0.529-0.675-0.821-1.518-0.821-2.373c0-2.095,1.704-3.799,3.799-3.799c0.934,0,1.804,0.32,2.484,0.898 c0.696-0.578,1.56-0.898,2.463-0.898c2.095,0,3.799,1.704,3.799,3.799c0,0.909-0.318,1.754-0.896,2.381l-4.86,5.561 C528.587,484.964,528.386,485.055,528.174,485.055L528.174,485.055z M523.929,478.349c0.208,0.255,2.471,2.839,4.243,4.858 l4.323-4.944c0.34-0.369,0.52-0.86,0.52-1.399c0-1.285-1.045-2.331-2.33-2.331c-0.729,0-1.421,0.344-1.9,0.943 c-0.142,0.178-0.353,0.267-0.585,0.275c-0.227-0.003-0.439-0.111-0.575-0.294c-0.441-0.587-1.129-0.925-1.887-0.925 c-1.285,0-2.33,1.046-2.33,2.331c0,0.678,0.275,1.171,0.507,1.467C523.919,478.336,523.925,478.342,523.929,478.349z"/>
-                        </g>
-                      </svg>
-                      <p class="post__heart-count">Нравится: 2560</p>
-                    </div>
-                  </div>
-                </li>
-              </ul>
-            </li>
-          </ul>
-          <div class="post__end">
-            <p class="post__text">Затмите их всех!</p>
-            <p class="post__text">Выкладывайте все, что накопилось в телефоне!</p>
-          </div>
-        </div>
-      </section>
-      <section class="post-upload">
-        <h2 class="visually-hidden">Загрузка поста</h2>
-        <div class="post-upload__inner">
-          <div class="post-upload__photo">
-            <picture>
-              <source media="(min-width: 1200px)" srcset="img/photo-road-desktop@1x.jpg 1x, img/photo-road-desktop@2x.jpg 2x">
-              <source media="(min-width: 660px)" srcset="img/photo-road-tablet@1x.jpg 1x, img/photo-road-tablet@2x.jpg 2x">
-              <img class="post__image" src="img/photo-road-mobile@1x.jpg" srcset="img/photo-road-mobile@2x.jpg 2x" alt="Зимняя дорога">
-            </picture>
-          </div>
-          <div class="post-upload__wrapper">
-            <div class="post-upload__fieldset">
-              <div class="post-upload__option">
-                  <input type="checkbox" value="1" id="crop" name="add[]" checked>
-                  <label for="crop">
-                    <svg version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="48px" height="48px" viewBox="0 0 48 48" enable-background="new 0 0 48 48" xml:space="preserve">
-                      <path fill="none" d="M0,0h48v48H0V0z"/>
-                      <path class="post-upload__color" d="M34,30h4V14c0-2.21-1.79-4-4-4H18v4h16V30z M14,34V2h-4v8H2v4h8v20c0,2.21,1.79,4,4,4h20v8h4v-8h8v-4H14z"/>
-                    </svg>
-                  </label>
-                  <input type="checkbox" value="1" id="fill" name="add[]">
-                  <label class="filter-option-label" for="fill">
-                    <svg version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="48px" height="48px" viewBox="0 0 48 48" enable-background="new 0 0 48 48" xml:space="preserve">
-                      <path fill="none" d="M0,0h48v48H0V0z"/>
-                      <path class="post-upload__color" d="M33.12,17.88L15.24,0l-2.83,2.83l4.76,4.76L6.88,17.88c-1.17,1.17-1.17,3.07,0,4.24l11,11C18.46,33.71,19.23,34,20,34 s1.54-0.29,2.12-0.88l11-11C34.29,20.95,34.29,19.05,33.12,17.88z M10.41,20L20,10.42L29.59,20H10.41z M38,23c0,0-4,4.33-4,7 c0,2.21,1.79,4,4,4s4-1.79,4-4C42,27.33,38,23,38,23z"/>
-                      <rect class="post-upload__color" y="40" width="48" height="3"/>
-                    </svg>
-                  </label>
-                  <input type="checkbox" value="1" id="contrast" name="add[]">
-                  <label class="filter-option-label-last" for="contrast">
-                    <svg version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="31.92px" height="31.92px" viewBox="-35.422 -7.96 31.92 31.92" enable-background="new -35.422 -7.96 31.92 31.92" xml:space="preserve">
-                      <path class="post-upload__color" fill="#231F20" d="M-19.462-3.96c6.595,0,11.96,5.365,11.96,11.96s-5.365,11.96-11.96,11.96S-31.422,14.595-31.422,8 S-26.057-3.96-19.462-3.96 M-19.462-7.96c-8.814,0-15.96,7.145-15.96,15.96c0,8.813,7.146,15.96,15.96,15.96S-3.502,16.813-3.502,8 C-3.502-0.815-10.648-7.96-19.462-7.96L-19.462-7.96z"/>
-                      <path class="post-upload__color" d="M-19.462,16.331c4.706,0,8.52-3.813,8.52-8.52c0-4.705-3.813-8.519-8.52-8.519"/>
-                    </svg>
-                  </label>
-              </div>
-            <form class="post-upload__form">
-              <div class="post-upload__range upload-range">
-                <div class="range-controls">
-                  <div class="scale">
-                  </div>
-                  <div class="toggle toggle-max"></div>
+            </fieldset>
+            <fieldset class="form-data__contacts">
+              <legend class="form-data__contacts-filters">Контактная информация</legend>
+              <div class="form-data__wrapper-contacts">
+                <div class="form-data__wrapper-inner-contacts">
+                  <label class="form-data__label-phone">Номер телефона</label>
+                  <input class="form-data__phone" type="text" id="userPhone" placeholder="Номер, пожалуйста">
                 </div>
-                <div class="range-controls__wrapper range-controls__hidden">
-                </div>
-                <div class="range-controls range-controls__hidden">
-                  <div class="scale">
-                    <div class="bar"></div>
-                  </div>
-                  <div class="toggle toggle-max"></div>
-                </div>
-                <div class="range-controls__wrapper range-controls__hidden">
-                </div>
-                <div class="range-controls range-controls__hidden">
-                  <div class="scale">
-                    <div class="bar"></div>
-                  </div>
-                  <div class="toggle toggle-max"></div>
+                <div class="form-data__wrapper-inner-contacts">
+                  <label class="form-data__label-mail">Адрес почты</label>
+                  <input class="form-data__mail" type="text" id="userMail" placeholder="Введите почту *">
                 </div>
               </div>
-            </form>
-          </div>
-            <form class="post-upload__buttons">
-              <button class="post-upload__post" type="submit">Запостить</button>
-              <button class="post-upload__cancel" type="submit">Отмена</button>
-            </form>
-          </div>
+            </fieldset>
+            <fieldset class="form-data__filter-radio">
+              <legend class="form-data__legend-radio">С каким приложением путешествовали?</legend>
+              <div class="form-data__wrapper">
+                <input class="filter-radio" type="radio" id="ios" name="add[]">
+                <label class="filter-radio__label" for="ios"><span class="form__radio-pink">Pink</span> для iOS</label>
+                <input class="filter-radio" type="radio" value="1" id="android" name="add[]">
+                <label class="filter-radio__label" for="android"><span class="form__radio-pink">Pink</span> на Android</label>
+                <input class="filter-radio" type="radio" value="1" id="windows" name="add[]">
+                <label class="filter-radio__label" for="windows">Windows Phone</label>
+              </div>
+            </fieldset>
+            <fieldset class="form-data__emotions">
+              <legend class="form-data__legend-emotions">Опишите свои эмоции</legend>
+              <div class="form-data__emotions-wrapper">
+                <textarea rows="8" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
+              </div>
+            </fieldset>
+            <div class="form-data__button">
+              <button class="form-data__submit" type="submit">Отправить форму</button>
+              <p class="form-data__note"><span class="form-data__star">*</span> - обязательные поля</p>
+            </div>
+          </form>
         </div>
       </section>
     </main>
