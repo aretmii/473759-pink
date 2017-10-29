@@ -46,4 +46,5 @@
     "test": "npm run editorconfig \u0026\u0026 npm run stylelint"
   },
   "version": "0.1.0"
+
 }
