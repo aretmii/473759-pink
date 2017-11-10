@@ -1,8 +1,8 @@
-.range-controls__hidden {
+.upload-range__hidden {
   display: none;
 }
 
-.range-controls__wrapper {
+.upload-range__wrapper {
   border-bottom: 1px solid #dddfe0;
   width: 240px;
   margin-left: -50px;
@@ -51,11 +51,11 @@
 }
 
 @media (min-width: $tablet-width) {
-  .range-controls__hidden {
+  .upload-range__hidden {
     display: block;
   }
 
-  .range-controls__wrapper {
+  .upload-range__wrapper {
     border-bottom: 1px solid #dddfe0;
     width: 290px;
     margin-left: -50px;
@@ -106,10 +106,18 @@
   .price-controls {
     font-size: 0;
   }
+
+  .range-controls--mid {
+    transform: translateY(10px);
+  }
+
+  .range-controls--down {
+    transform: translateY(18px);
+  }
 }
 
 @media (min-width: $desktop-width) {
-  .range-controls__wrapper {
+  .upload-range__wrapper {
     border-bottom: 1px solid #dddfe0;
     width: 410px;
     margin-left: -80px;
@@ -159,5 +167,17 @@
 
   .price-controls {
     font-size: 0;
+  }
+
+  .range-controls--up {
+    transform: translateY(-18px);
+  }
+
+  .range-controls--mid {
+    transform: translateY(-5px);
+  }
+
+  .range-controls--down {
+    transform: translateY(4px);
   }
 }

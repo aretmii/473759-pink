@@ -1,4 +1,12 @@
 .filter-radio {
+  padding-left: 15px;
+  margin: 30px 0 30px 60px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.filter-radio__input {
   vertical-align: top;
   width: 17px;
   height: 17px;
@@ -7,18 +15,18 @@
   opacity: 0;
 }
 
-.filter-radio + label {
+.filter-radio__input + label {
   cursor: pointer;
   position: relative;
   padding: 0 0 0 60px;
   margin-bottom: 50px;
 }
 
-.filter-radio + label:last-of-type {
+.filter-radio__input + label:last-of-type {
   margin-bottom: 0;
 }
 
-.filter-radio + label::before {
+.filter-radio__input + label::before {
   content: " ";
   position: absolute;
   top: -3px;
@@ -30,15 +38,15 @@
   background: #ffffff;
 }
 
-.filter-radio:hover + label::before {
+.filter-radio__input:hover + label::before {
   border: 2px solid #354250;
 }
 
-.filter-radio:active + label::before {
+.filter-radio__input:active + label::before {
   border: 2px solid #d22856;
 }
 
-.filter-radio + label::after {
+.filter-radio__input + label::after {
   content: " ";
   position: absolute;
   top: 9px;
@@ -50,10 +58,50 @@
   opacity: 0;
 }
 
-.filter-radio:active + label::after {
-  background: transparent;
+.filter-radio__input:active + label::after {
+  content: " ";
+  position: absolute;
+  top: 9px;
+  left: 12px;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background: #d22856;
+  opacity: 1;
 }
 
-.filter-radio:checked + label::after {
+.filter-radio__input:checked + label::after {
   opacity: 1;
+}
+
+.filter-radio__input:active:checked + label::after {
+  content: " ";
+  position: absolute;
+  top: 9px;
+  left: 12px;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background: #d22856;
+  opacity: 0;
+}
+
+@media (min-width: $tablet-width) {
+  .filter-radio {
+    padding-left: 15px;
+    margin: 30px 0 30px 60px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .filter-radio {
+    max-width: 300px;
+    padding: 20px 0 0 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
 }

@@ -1,4 +1,5 @@
 .site-list {
+  font-family: $font-stack;
   font-weight: bold;
 }
 
@@ -34,7 +35,7 @@
 @media (min-width: $desktop-width) {
   .site-list__item a {
     font-size: 18px;
-    font-weight: normal;
+    font-weight: lighter;
     line-height: 18px;
     text-transform: none;
   }
@@ -43,16 +44,21 @@
     text-transform: uppercase;
   }
 
+  .site-list {
+    margin: 26px 0 0 24px;
+  }
+
   .site-list a {
     text-decoration: none;
     text-align: center;
     color: #ffffff;
     display: inline-block;
     font-size: 18px;
-    height: 32px;
+    font-weight: lighter;
+    height: 30px;
     background-color: transparent;
     margin-top: 0;
-    padding: 35px 0 25px 0;
+    padding: 45px 0 25px 0;
     width: auto;
     border-top: none;
   }

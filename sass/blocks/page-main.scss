@@ -1,0 +1,9 @@
+.page-header--navopened .page-main {
+  transform: translateY(-100px);
+}
+
+@media (min-width: $tablet-width) {
+  .page-header--navopened .page-main {
+    margin-top: 603px;
+  }
+}

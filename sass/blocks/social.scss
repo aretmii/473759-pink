@@ -1,16 +1,17 @@
 .social__list {
   list-style: none;
   padding: 0;
+  margin: 32px 0 0 18px;
   display: flex;
 }
 
 .social__item {
-  border: 3px solid #e9ebec;
-  width: 30px;
-  height: 30px;
+  border: 2px solid #e9ebec;
+  width: 25px;
+  height: 25px;
   border-radius: 50px;
   padding: 10px 10px;
-  margin-right: 10px;
+  margin-right: 15px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -38,4 +39,16 @@
 
 .social__item:active .social__link-color {
   fill: #f1becc;
+}
+
+@media (min-width: $tablet-width) {
+  .social__list {
+    margin: 26px 0 0 0;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .social__list {
+    margin: 26px 0 0 24px;
+  }
 }

@@ -2,7 +2,7 @@
   background-color: rgba(29, 38, 49, 1);
   color: #ffffff;
   width: 100%;
-  margin-top: 460px;
+  margin: 460px auto 0 auto;
 }
 
 .download__wrapper {
@@ -18,6 +18,7 @@
 .download__text {
   display: none;
   margin: 0;
+  font-weight: lighter;
 }
 
 .download__button {
@@ -48,7 +49,7 @@
   list-style: none;
   display: flex;
   padding: 0;
-  margin: 67px 0 55px 0;
+  margin: 29px 0 7px 0;
 }
 
 .download__item {
@@ -64,9 +65,10 @@
 .download__description {
   font-size: 14px;
   line-height: 24px;
-  font-weight: normal;
+  font-weight: lighter;
   text-align: center;
   padding: 0;
+  margin-bottom: 30px;
 }
 
 @media (min-width: $tablet-width) {
@@ -74,16 +76,38 @@
     background-color: transparent;
     color: #ffffff;
     width: 340px;
-    margin: 200px 0 110px 0;
+    margin: 200px 0 90px 0;
+  }
+
+  .download__list {
+    list-style: none;
+    display: flex;
+    padding: 0;
+    margin: 46px 0 19px 0;
   }
 
   .download__text {
     display: block;
     font-size: 40px;
-    font-weight: normal;
+    font-weight: lighter;
     width: 235px;
     text-align: center;
     line-height: 50px;
+  }
+
+  .download__wrapper {
+    width: 100%;
+    max-width: 300px;
+    margin: 0;
+  }
+
+  .download__description {
+    font-size: 18px;
+    line-height: 24px;
+  }
+
+  .download__button {
+    margin-top: 26px;
   }
 }
 
@@ -92,22 +116,22 @@
     background-color: transparent;
     color: #ffffff;
     width: 300px;
-    margin: 230px 0 0 0;
+    margin: 218px 0 0 0;
   }
 
   .download__text {
     font-size: 50px;
     font-weight: lighter;
-    line-height: 55px;
+    line-height: 60px;
     margin: 0;
   }
 
   .download__button {
     width: 100%;
-    margin-top: 59px;
+    margin-top: 52px;
     font-weight: bolder;
     font-size: 21px;
-    line-height: 18px;
+    border: 2px solid #ffffff;
   }
 
   .download__description {
@@ -116,5 +140,23 @@
     padding: 0;
     margin: 0;
     width: 320px;
+    opacity: 0.5;
+  }
+
+  .download__wrapper {
+    font-family: $font-stack;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    max-width: 300px;
+  }
+
+  .download__list {
+    list-style: none;
+    display: flex;
+    padding: 0;
+    margin: 65px 0 60px 0;
+    color: #ffffff;
   }
 }

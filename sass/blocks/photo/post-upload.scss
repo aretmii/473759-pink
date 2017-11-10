@@ -3,6 +3,7 @@
   flex-direction: column;
   align-items: center;
   background-color: #f2f2f2;
+  margin-bottom: 40px;
 }
 
 .post-upload__photo {
@@ -55,7 +56,7 @@
   fill: #8d949b;
 }
 
-.filter-option-label-last {
+.post-upload__option-label-last {
   text-align: center;
 }
 
@@ -64,14 +65,14 @@
   border-top: 1px #dddfe0 solid;
   display: flex;
   flex-direction: column;
-  padding: 80px 20px 0 20px;
+  padding: 50px 20px 0 20px;
   margin: 20px 0;
 }
 
 .post-upload__post,
 .post-upload__cancel {
   border-radius: 35px;
-  padding: 20px 0;
+  padding: 15px 0;
   margin-bottom: 10px;
   background-color: #f2f2f2;
   outline: none;
@@ -139,7 +140,7 @@
     flex-direction: row;
     flex-wrap: nowrap;
     width: auto;
-    margin-left: 20px;
+    margin-left: 40px;
   }
 
   .post-upload__option {
@@ -162,11 +163,11 @@
     height: 22px;
   }
 
-  .filter-option-label-last {
+  .post-upload__option-label-last {
     text-align: left;
   }
 
-  .post-upload__option .filter-option-label-last svg {
+  .post-upload__option .post-upload__option-label-last svg {
     width: 16px;
     height: 16px;
   }
@@ -189,19 +190,41 @@
     align-items: center;
     width: 93.9%;
     max-width: 800px;
-    margin: 50px auto;
+    margin: 38px auto 25px auto;
   }
 
   .post-upload__photo {
     min-width: 300px;
     padding: 0;
-    margin-left: 10px;
   }
 
   .post-upload__post,
   .post-upload__cancel {
     width: 260px;
     padding: 18px 0;
+    margin-bottom: 5px
+  }
+
+  .post-upload__post {
+    width: 260px;
+    padding: 18px 0;
+    margin-bottom: 22px;
+  }
+
+  .post-upload__buttons {
+    padding: 80px 20px 0 30px;
+  }
+
+  .post-upload__option .post-upload__option-label-up svg {
+transform: translate(0px, 9px);
+  }
+
+  .post-upload__option .post-upload__option-label-last svg {
+    transform: translate(2px, 22px);
+  }
+
+  .post-upload__option .post-upload__option-label-mid svg {
+    transform: translate(5px, 35px);
   }
 }
 
@@ -209,7 +232,7 @@
   .post-upload {
     width: 78.3%;
     max-width: 940px;
-    margin: 0 auto;
+    margin: 0 auto 28px auto;
   }
 
   .post-upload__wrapper {
@@ -222,6 +245,11 @@
     align-items: center;
     width: 100%;
     max-width: 800px;
+    margin: 40px 0 45px 0;
+  }
+
+  .post-upload__photo {
+    margin-top: 15px;
   }
 
   .post-upload__fieldset {
@@ -229,6 +257,7 @@
     flex-direction: row;
     flex-wrap: nowrap;
     width: 100%;
+    margin-top: 10px;
   }
 
   .post-upload__option {
@@ -251,7 +280,7 @@
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    padding: 150px 0 0 0;
+    padding: 162px 0 0 20px;
     margin: 0;
   }
 
@@ -260,19 +289,27 @@
     width: 180px;
     padding: 18px 0;
     box-sizing: border-box;
+    font-weight: bold;
   }
 
-  .post-upload__option label > svg {
+  .post-upload__option .post-upload__option-label-up svg {
     width: 44px;
     height: 44px;
   }
 
-  .filter-option-label-last {
+  .post-upload__option-label-last {
     text-align: left;
   }
 
-  .post-upload__option .filter-option-label-last svg {
+  .post-upload__option .post-upload__option-label-last svg {
     width: 32px;
     height: 32px;
+    transform: translate(5px, 5px);
+  }
+
+  .post-upload__option .post-upload__option-label-mid svg {
+    width: 45px;
+    height: 45px;
+    transform: translate(2px, 3px);
   }
 }

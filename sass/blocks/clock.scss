@@ -11,7 +11,7 @@
   .clock {
     display: flex;
     justify-content: center;
-    margin: 60px 0 100px 0;
+    margin: 25px 0 58px 0;
   }
 
   .clock__wrapper {
@@ -21,7 +21,7 @@
   }
 
   .clock__clocks {
-    width: 300px;
+    width: 255px;
     position: relative;
   }
 
@@ -54,17 +54,30 @@
   .clock__text {
     width: 310px;
     height: 276px;
+    padding-left: 10px;
   }
 
   .clock__title {
     font-size: 30px;
-    line-height: 36px;
+    line-height: 40px;
+    width: 54%;
+    margin: 70px 0 0 0;
+  }
+
+  .clock__title--space {
   }
 
   .clock__par {
     font-size: 14px;
     line-height: 24px;
     color: #283645;
+    margin: 6px 0 7px 0;
+  }
+
+  .clock__info {
+    color: #d22856;
+    font-size: 14px;
+    line-height: 24px;
   }
 }
 
@@ -78,13 +91,14 @@
   .clock__wrapper {
     max-width: 940px;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
     flex-grow: 1;
   }
 
   .clock__clocks {
-    flex-grow: 1;
+    width: 300px;
+    margin: 5px 0 0 0;
   }
 
   .clock__clocks svg {
@@ -92,13 +106,13 @@
   }
 
   .clock__inner {
-    border: 20px #d22856 solid;
+    border: 18px #d22856 solid;
     border-radius: 50%;
     width: 253px;
     height: 253px;
     position: absolute;
-    top: 70px;
-    left: 52px;
+    top: 72px;
+    left: 23px;
     box-sizing: border-box;
     font-size: 120px;
     font-weight: bold;
@@ -112,17 +126,26 @@
   .clock__text {
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    flex-grow: 5;
+    width: 575px;
+    margin-left: 70px;
+    padding: 0;
   }
 
   .clock__title {
     font-size: 30px;
     line-height: 30px;
+    margin: 60px 0 12px 0;
   }
 
   .clock__par {
     font-size: 18px;
-    line-height: 24px;
+    line-height: 30px;
+    color: #283645;
+    width: 520px;
+    margin:14px 0 36px 0;
+  }
+
+  .clock__info {
+    font-size: 18px;
   }
 }

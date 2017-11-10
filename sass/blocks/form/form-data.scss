@@ -3,15 +3,8 @@
   flex-direction: column;
   align-items: center;
   margin: 0;
-}
-
-
-.form-data__wrapper {
-  padding-left: 15px;
-  margin: 30px 0 30px 60px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
+  margin-bottom: 40px;
+  position: relative;
 }
 
 .form-data__full-name {
@@ -36,6 +29,7 @@
 .form-data__title {
   padding-left: 24px;
   text-transform: uppercase;
+  transform: translateY(-5px);
 }
 
 .form-data__names {
@@ -44,7 +38,7 @@
   color: #283645;
   border: 2px solid #e5e5e5;
   min-height: 58px;
-  padding: 0 0 0 5px;
+  padding: 0 0 0 20px;
   width: 100%;
   outline: none;
 }
@@ -68,7 +62,7 @@
 
 .form-data__filter-wrapper {
   width: 87.5%;
-  margin: 70px auto;
+  margin: 70px auto 0 auto;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -101,7 +95,7 @@
 .form-data__wrapper-contacts {
   width: 87.5%;
   margin: 0 auto;
-  margin-top: 20px;
+  margin-top: 27px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -144,15 +138,17 @@
   text-transform: uppercase;
   width: 71.4%;
   transform: translateY(40px);
+  font-size: 14px;
 }
 
 .form-data__emotions {
   border: none;
   width: 100%;
   margin: 60px 0 0 0;
-  padding: 30px 0 40px 0;
+  padding: 30px 0 22px 0;
   display: flex;
   justify-content: center;
+  font-size: 14px;
 }
 
 .form-data__emotions-wrapper {
@@ -163,6 +159,7 @@
 .form-data__emotions-wrapper textarea {
   width: 100%;
   resize: none;
+  height: 200px;
 }
 
 .form-data__legend-emotions {
@@ -215,6 +212,67 @@
   align-items: center;
 }
 
+.form-data__sent {
+  width: 100%;
+  position: absolute;
+  bottom: 400px;
+  box-shadow:2px 4px rgba(0, 0, 0, .03);
+  display: none;
+}
+
+.form-data__error {
+  bottom: 950px;
+  width: 100%;
+  position: absolute;
+  box-shadow:2px 4px rgba(0, 0, 0, .03);
+  display: none;
+}
+
+.form-data__sent-text {
+  background-color: #ffffff;
+  padding: 35px 0 35px 0;
+  text-align: center;
+}
+
+.form-data__sent-title {
+  font-size: 18px;
+  font-weight: bold;
+  margin-top: 0;
+}
+
+.form-data__sent-descrp {
+  font-size: 14px;
+  max-width: 260px;
+  margin: 0 auto;
+}
+
+.form-data__sent-submit {
+  background-color: #f2f2f2;
+  padding: 50px 20px;
+}
+
+.form-data__sent-submit-err {
+  background-color: #ffffff;
+  padding: 0 20px 50px 20px;
+}
+
+.form-data__sent-button {
+  width: 100%;
+  border: none;
+  border-radius: 3px;
+  font-size: 18px;
+  font-weight: bold;
+  line-height: 30px;
+  padding: 20px 5px;
+  text-transform: uppercase;
+  background-color: #2aab6d;
+  color: #ffffff;
+}
+
+.form-data__hidden {
+  display: none;
+}
+
 @media (min-width: $tablet-width) {
   .form-data {
     flex-direction: column;
@@ -244,20 +302,13 @@
     line-height: 30px;
     margin-right: 20px;
     text-transform: uppercase;
+    transform: translateY(0px);
   }
 
   .form-data__names {
     min-height: 58px;
     padding: 0 0 0 5px;
     width: 100%;
-  }
-
-  .form-data__wrapper {
-    padding-left: 15px;
-    margin: 30px 0 30px 60px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
   }
 
   .form-data__filter-radio {
@@ -336,6 +387,9 @@
   .form-data__mail {
     height: 59px;
     padding: 0 0 0 20px;
+    font-size: 18px;
+    line-height: 30px;
+    color: #283645;
   }
 
   .form-data__label-mail,
@@ -361,6 +415,9 @@
 
   .form-data__emotions-wrapper > textarea {
     width: 99%;
+    font-size: 18px;
+    color: #283645;
+    padding: 25px;
   }
 
   .form-data__legend-emotions {
@@ -382,6 +439,16 @@
     width: 300px;
     height: 60px;
     vertical-align: middle;
+  }
+
+  .form-data__sent {
+    bottom: 920px;
+    max-width: 460px;
+  }
+
+  .form-data__error {
+    bottom: 1410px;
+    max-width: 460px;
   }
 }
 
@@ -416,6 +483,7 @@
     font-size: 14px;
     line-height: 30px;
     margin-right: 20px;
+    padding-left: 0;
     text-transform: uppercase;
     display: flex;
     align-items: center;
@@ -427,18 +495,10 @@
     width: 100%;
   }
 
-  .form-data__wrapper {
-    max-width: 300px;
-    padding: 20px 0 0 15px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-  }
-
   .form-data__filter-radio {
     width: 49%;
     max-width: 435px;
-    margin: 0 0 50px 35px;
+    margin: 0 0 0 35px;
     box-sizing: border-box;
     order: 1;
   }
@@ -450,7 +510,7 @@
 
   .form-data__filter {
     width: 100%;
-    margin: 55px 0 0 0;
+    margin: 53px 0 0 0;
     order: 3;
   }
 
@@ -458,8 +518,8 @@
     max-width: 820px;
     min-height: 120px;
     margin: 0 auto;
-    margin-top: 30px;
-    margin-bottom: 40px;
+    margin-top: 40px;
+    margin-bottom: 20px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -469,7 +529,7 @@
   .form-data__contacts {
     width: 100%;
     order: 2;
-    margin: 50px 0 0 0;
+    margin: 55px 0 0 0;
   }
 
   .form-data__wrapper-inner-contacts {
@@ -477,11 +537,12 @@
     max-width: 375px;
     display: flex;
     flex-direction: column-reverse;
+    margin: 10px 0 0 0;
   }
 
   .form-data__wrapper-contacts {
     max-width: 820px;
-    margin: 0 auto;
+    margin: 5px auto 15px auto;
     margin-top: 20px;
     display: flex;
     flex-direction: row;
@@ -491,7 +552,7 @@
   .form-data__phone,
   .form-data__mail {
     height: 59px;
-    padding: 0 0 0 15px;
+    padding: 0 0 0 19px;
   }
 
   .form-data__label-mail,
@@ -505,7 +566,7 @@
     width: 100%;
     max-width: 940px;
     order: 4;
-    margin: 60px 0 0 0;
+    margin: 50px 0 0 0;
     padding: 30px 0 40px 0;
     display: flex;
     justify-content: center;
@@ -516,7 +577,11 @@
   }
 
   .form-data__emotions-wrapper > textarea {
-    width: 99%;
+    width: 97%;
+    max-height: 110px;
+    font-size: 20px;
+    line-height: 30px;
+    padding: 15px 0 0 20px;
   }
 
   .form-data__legend-filters {
@@ -527,6 +592,26 @@
   .form-data__button {
     width: 100%;
     order: 5;
-    margin: 65px 0 0 0;
+    margin: 63px 0 0 0;
+  }
+
+  .form-data__sent {
+    bottom: 200px;
+    max-width: 780px;
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+  }
+
+  .form-data__error {
+    bottom: 700px;
+    max-width: 460px;
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+  }
+
+  .form-data__hidden {
+    display: inline;
   }
 }

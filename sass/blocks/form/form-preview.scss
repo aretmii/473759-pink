@@ -1,16 +1,4 @@
 .form-preview {
-  background-image: url("../img/bg-back-mobile@1x.jpg");
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  min-height: 235px;
-}
-
-.form-preview__wrapper {
   display: flex;
   justify-content: center;
   padding: 0 20px;
@@ -18,47 +6,47 @@
 
 .form-preview__item {
   font-size: 24px;
-  font-weight: normal;
+  font-weight: lighter;
   line-height: 30px;
   text-align: center;
   padding: 0;
   color: #ffffff;
   width: 87%;
-  margin: 100px 0 50px 0;
+  margin: 70px 0 50px 0;
 }
 
-.form-preview__wrapper-info {
+.form__wrapper-info {
   display: flex;
   justify-content: center;
-  padding: 50px 0;
+  padding: 45px 0 11px 0;
 }
 
 .form__info {
   width: 87%;
   margin: 0;
   text-align: center;
-  font-size: 18px;
+  font-size: 14px;
   line-height: 30px;
   color: #283645;
 }
 
 @media (min-width: $tablet-width) {
-  .form-preview__wrapper {
-    padding-top: 70px;
+  .form-preview {
     display: flex;
     justify-content: center;
   }
 
   .form-preview__item {
     font-size: 50px;
-    font-weight: normal;
-    line-height: 55px;
+    font-weight: lighter;
+    line-height: 60px;
     padding: 0;
     color: #ffffff;
     width: 93%;
+    margin: 180px 0 80px 0;
   }
 
-  .form-preview__wrapper-info {
+  .form__wrapper-info {
     display: flex;
     justify-content: center;
     padding: 100px 0 75px 0;
@@ -75,30 +63,23 @@
 }
 
 @media (min-width: $desktop-width) {
-  .form-preview__wrapper {
+  .form-preview {
     width: 80%;
-    padding-top: 70px;
     display: flex;
     justify-content: center;
   }
 
-  .form-preview {
-    padding: 0;
-    color: #ffffff;
-    width: 85%;
-  }
-
   .form-preview__item {
     font-size: 50px;
-    font-weight: normal;
+    font-weight: lighter;
     line-height: 55px;
     padding: 0;
     color: #ffffff;
     width: 820px;
-    margin: 105px 0 110px 0;
+    margin: 177px 0 110px 0;
   }
 
-  .form-preview__wrapper-info {
+  .form__wrapper-info {
     width: 100%;
     display: flex;
     justify-content: center;

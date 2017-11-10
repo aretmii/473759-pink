@@ -1,4 +1,4 @@
-.slider-radio {
+.slider-radio__input {
   vertical-align: top;
   width: 12px;
   height: 12px;
@@ -7,26 +7,28 @@
   opacity: 0;
 }
 
-.slider-radio__form fieldset {
+.slider-radio fieldset {
   border: none;
+  padding-top: 13px;
 }
 
 .slider-radio__wrapper {
-  margin-top: 45px;
+  margin-top: 31px;
+  margin-left: 12px;
 }
 
-.slider-radio + label {
+.slider-radio__input + label {
   cursor: pointer;
   position: relative;
-  padding: 0 0 0 30px;
+  padding: 0 0 0 25px;
   margin-bottom: 50px;
 }
 
-.slider-radio + label:last-of-type {
+.slider-radio__input + label:last-of-type {
   margin-bottom: 0;
 }
 
-.slider-radio + label::before {
+.slider-radio__input + label::before {
   content: " ";
   position: absolute;
   top: -3px;
@@ -40,7 +42,7 @@
   opacity: 0;
 }
 
-.slider-radio + label::after {
+.slider-radio__input + label::after {
   content: " ";
   position: absolute;
   top: 0;
@@ -51,31 +53,38 @@
   background: #bec2c7;
 }
 
-.slider-radio:checked + label::before {
+.slider-radio__input:checked + label::before {
   opacity: 1;
 }
 
-.slider-radio:checked + label::after {
+.slider-radio__input:checked + label::after {
   opacity: 0;
 }
 
-.slider-radio:hover + label::after {
+.slider-radio__input:hover + label::after {
   background: #7e868f;
 }
 
-.slider-radio:active + label::after {
+.slider-radio__input:active + label::after {
   background: #e9ebec;
 }
 
-
 @media (min-width: $tablet-width) {
-  .slider-radio__form--closed {
+  .slider-radio fieldset {
+    padding-left: 32px;
+  }
+
+  .slider-radio--closed {
     display: none;
+  }
+
+  .slider-radio__wrapper {
+    margin-top: 29px;
   }
 }
 
 @media (min-width: $desktop-width) {
-  .slider-radio__form {
+  .slider-radio {
     display: none;
   }
 }
