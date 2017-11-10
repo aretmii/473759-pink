@@ -170,6 +170,7 @@
   .post-upload__option .post-upload__option-label-last svg {
     width: 16px;
     height: 16px;
+    transform: translate(2px, 22px);
   }
 
   .post-upload__range {
@@ -202,7 +203,7 @@
   .post-upload__cancel {
     width: 260px;
     padding: 18px 0;
-    margin-bottom: 5px
+    margin-bottom: 5px;
   }
 
   .post-upload__post {
@@ -216,11 +217,7 @@
   }
 
   .post-upload__option .post-upload__option-label-up svg {
-transform: translate(0px, 9px);
-  }
-
-  .post-upload__option .post-upload__option-label-last svg {
-    transform: translate(2px, 22px);
+    transform: translate(0, 9px);
   }
 
   .post-upload__option .post-upload__option-label-mid svg {
